@@ -25,7 +25,7 @@ All of the changes from vanilla Unciv and new content are listed here.<br>
 	  * [Priest](#priest)
 	  * [Entertainer](#entertainer)
 	  * [Farmer](#farmer)
-- [Vanilla/DLC Civilizations](#vanilla--dlc-civilizations)
+- [Vanilla/DLC Civilizations](#vanilladlc-civilizations)
   * [America](#america)
   * [Arabia](#arabia)
   * [Aztecs](#aztecs)
