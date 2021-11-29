@@ -197,11 +197,14 @@
 		"innerColor": [239,236,148],
 		"favoredReligion": "Christianity",
 		"uniqueName": "Ancien Régime",
-		"uniqueText": "+2 Culture per turn from cities before discovering Steam Power. Land Melee units gain the Blitz and Quick Study promotions.",
+		"uniqueText": "+2 Culture per turn from cities before discovering Steam Power. Land Melee units gain the Blitz and Quick Study promotions, and non-nuke Military units gain the Morale promotion.",
 		"uniques": [
 			"[+2 Culture] per turn from cities before [Steam Power]",
 			"[{Land} {Melee}] units gain the [Blitz] promotion",
-			"[{Land} {Melee}] units gain the [Quick Study] promotion"
+			"[{Land} {Melee}] units gain the [Quick Study] promotion",
+			"[{non-air} {Military}] units gain the [Morale] promotion",
+			"[{Fighter} {Military}] units gain the [Morale] promotion",
+			"[{Bomber} {Military}] units gain the [Morale] promotion"
 		],
 		"cities": ["Paris","Orleans","Lyon","Troyes","Tours","Marseille","Chartres","Avignon","Rouen","Grenoble",
 			"Dijon","Amiens","Cherbourg","Poitiers","Toulouse","Bayonne","Strasbourg","Brest","Bordeaux","Rennes",

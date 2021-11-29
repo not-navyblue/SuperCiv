@@ -155,6 +155,15 @@
 		"unitTypes": ["Sword","Gunpowder"]
 	},
 	{
+		"name": "Guerrilla Warfare",
+		"prerequisites": ["Shock III", "Drill III"],
+		"uniques": [
+			"[+25]% Strength <when fighting in [Forest] tiles>", 
+			"[+25]% Strength <when fighting in [Jungle] tiles>"
+		],
+		"unitTypes": ["Sword","Gunpowder"]
+	},
+	{
 		"name": "Amphibious",
 		"prerequisites": ["Shock I", "Drill I"],
 		"uniques": ["Eliminates combat penalty for attacking over a river", "Eliminates combat penalty for attacking from the sea"],
@@ -509,7 +518,6 @@
 		"unitTypes": ["Sword","Gunpowder","Fighter","Bomber"]
 	},
 
-
 	// Water ranged and air units
 	{
 		"name": "Bombardment I",
@@ -529,22 +537,55 @@
 		"unitTypes": ["Ranged Water","Fighter","Bomber"]
 	},
 
+	// Special uniques
+	{
+		"name": "Trump Card",
+		"prerequisites": ["Shock III", "Drill III", "Accuracy III", "Barrage III"],
+		"uniques": [
+			"Special unit promotion", // added for flavor
+			"[+75]% Strength <when below [30] HP>",
+			"[-10]% Strength <when above [90] HP>",
+			"Incompatible with [Defeatist]"
+		],
+		"unitTypes": ["Sword", "Gunpowder", "Archery", "Ranged Gunpowder", "Mounted", "Armored", "Siege"]
+	},
+	{
+		"name": "Defeatist",
+		"prerequisites": ["Shock III", "Drill III", "Accuracy III", "Barrage III"],
+		"uniques": [
+			"Special unit promotion",
+			"[+50]% Strength <when above [50] HP>",
+			"[+4] Movement <when below [30] HP>",
+			"[-10]% Strength <when below [30] HP>",
+			"Incompatible with [Trump Card]"
+		],
+		"unitTypes": ["Sword", "Gunpowder", "Archery", "Ranged Gunpowder", "Mounted", "Armored", "Siege"]
+	},
+
 	// Uniques that should be kept on upgrades
 	{
-		"name": "Morale", // Heroic Epic
+		"name": "Morale", // Heroic Epic and French units
 		"uniques": ["[+15]% Strength"]
 	},
 	{
-		"name": "Great Generals I", // only for Companion Cavalry, Keshik, Chu-Ko-Nu and their subsequent upgrades
+		"name": "Great Generals I", // only for Companion Cavalry, Chu-Ko-Nu and their subsequent upgrades
 		"uniques": ["[Great General] is earned [50]% faster"]
 	},
 	{
-		"name": "Great Generals II", // only for Samurai and subsequent upgrades
+		"name": "Great Generals II", // only for Panzer, Keshik and their subsequent upgrades
 		"uniques": ["[Great General] is earned [100]% faster"]
 	},
 	{
-		"name": "Quick Study", // only for Keshik, French land units and subsequent upgrades
+		"name": "Great Generals III", // only for Samurai and subsequent upgrades
+		"uniques": ["[Great General] is earned [150]% faster"]
+	},
+	{
+		"name": "Quick Study", // only for French land units
 		"uniques": ["[50]% Bonus XP gain"]
+	},
+	{
+		"name": "Quick Study II", // only for Keshik and subsequent upgrades
+		"uniques": ["[100]% Bonus XP gain"]
 	},
 	{
 		"name": "Haka War Dance", // only for Maori Warrior and subsequent upgrades
@@ -571,7 +612,7 @@
 		"uniques": ["[+30]% Strength decreasing with distance from the capital"]
 	},
 	{
-		"name": "Norwegian Ski Infantry", // only for titular unit and subsequent upgrades
+		"name": "Arctic Warfare", // only for Norwegian Ski Infantry and subsequent upgrades
 		"uniques": [
 			"[+25]% Strength <when fighting in [Snow] tiles>",
 			"[+25]% Strength <when fighting in [Tundra] tiles>",
@@ -579,6 +620,18 @@
 			"Double movement in [Snow]",
 			"Double movement in [Tundra]",
 			"Double movement in [Hill]"
+		]
+	},
+	{
+		"name": "Foreign Fighter", // only for Foreign Legion and subsequent upgrades
+		"uniques": [
+			"[+20]% Strength <when fighting in [Foreign Land] tiles>"
+		]
+	},
+	{
+		"name": "Phalanx Formation", // only for Hoplite and subsequent upgrades
+		"uniques": [
+			"+[15]% Strength for [Military] units which have another [Military] unit in an adjacent tile"
 		]
 	}
 ]
