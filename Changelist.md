@@ -6,6 +6,10 @@ All of the changes from vanilla Unciv and new content are listed here.<br>
 
 ### Table of Contents
 - [Gameplay Elements](#gameplay-elements)
+  - [Units](#units)
+    - Existing Units
+	- New Units
+	  * [Mechanized Gunner](#mechanized-gunner)
   - [Unit Promotions](#unit-promotions)
     - Existing Promotions
       * [Scouting III](#scouting-iii)
@@ -14,7 +18,16 @@ All of the changes from vanilla Unciv and new content are listed here.<br>
 	- New Promotions
 	  * [City Raider](#city-raider-i-ii--iii)
 	  * [Mountaineer](#mountaineer)
-	  * [Norwegian Ski Infantry](#norwegian-ski-infantry)
+	  * [Guerrilla Warfare](#guerrilla-warfare)
+	  - Special Promotions
+	    * [Trump Card](#trump-card)
+		* [Defeatist](#defeatist)
+	  - Exclusive Promotions
+	    * [Arctic Warfare](#arctic-warfare)
+	    * [Foreign Fighter](#foreign-fighter)
+		* [Phalanx Formation](#phalanx-formation)
+		* [Great Generals III](#great-generals-iii)
+		* [Quick Study II](#quick-study-ii)
   - [Specialists](#specialists)
     - Existing Specialists
 	  * [Scientist](#scientist)
@@ -39,6 +52,7 @@ All of the changes from vanilla Unciv and new content are listed here.<br>
   * [Greece](#greece)
   * [Inca](#inca)
   * [India](#india)
+  * [Iroquois](#iroquois)
   * [Japan](#japan)
   * [Korea](#korea)
   * [Mongolia](#mongolia)
@@ -62,7 +76,17 @@ All of the changes from vanilla Unciv and new content are listed here.<br>
   * [Sweden](#sweden)
 
 ## Gameplay Elements
+### Units
+#### Mechanized Gunner
+- [++] Upgrades from Machine Gun (and its unique replacements)
+- Cost: 375
+- Range: 3
+- Melee Strength: 80
+- Ranged Strength: 95
+- Movement: 3
+
 ### Unit Promotions
+**Existing Promotions**
 #### Scouting III
 - [++] +1 Sight
 - [=] +1 Movement
@@ -81,6 +105,7 @@ All of the changes from vanilla Unciv and new content are listed here.<br>
 - Requires Accuracy II, Barrage II, Shock III, or Drill III
 - Available for most land units except Civilians, Scouts and Armored units
 
+<br>**New Promotions**<br>
 #### City Raider I, II, & III
 - [++] +15% Strength vs cities (City Raider I & II)
 - [++] +20% Strength vs cities (City Raider III)
@@ -96,10 +121,51 @@ All of the changes from vanilla Unciv and new content are listed here.<br>
 - Requires Blitz, March, or Scouting III
 - Available for all land Military units
 
-#### Norwegian Ski Infantry
+#### Guerrilla Warfare
+- [++] +25% Strength in Forest and Jungle
+- Requires Shock III or Drill III
+- Available for Sword and Gunpowder units
+
+<br>**Special Promotions**<br>
+*These are unit promotions that give large bonuses to units, but have drawbacks and are mutually exclusive with other special promotions.*
+#### Trump Card
+- Special unit promotion
+- [++] +75% Strength when below 30 HP
+- [++] -10% Strength when above 90 HP
+- Requires Shock III, Drill III, Accuracy III, or Barrage III
+- Incompatible with Defeatist
+- Available for most land Military units except Scouts
+
+#### Defeatist
+- Special unit promotion
+- [++] +50% Strength when above 50 HP
+- [++] -10% Strength and +4 Movement when below 30 HP
+- Requires Shock III, Drill III, Accuracy III, or Barrage III
+- Incompatible with Defeatist
+- Available for most land Military units except Scouts
+
+<br>**Exclusive Promotions**<br>
+*These are unit promotions that are only available for certain units.*
+#### Arctic Warfare
 - [++] +25% Strength when fighting in Hills, Tundra, and Snow
 - [++] Double movement in Hills, Tundra, and Snow
-- Only available for Norwegian Ski Infantry
+- Only available for [Norwegian Ski Infantry](#unique-unit-2-norwegian-ski-infantry)
+
+#### Foreign Fighter
+- [++] +20% Strength when fighting in Foreign Land
+- Only available for [Foreign Legion](#unique-unit-2-foreign-legion)
+
+#### Phalanx Formation
+- [++] +15% Strength for Military units which have another Military unit in an adjacent tile
+- Only available for [Hoplite](#unique-unit-1-hoplite)
+
+#### Great Generals III
+- [++] Great General is earned 150% faster
+- Only available for [Samurai](#unique-unit-1-samurai)
+
+#### Quick Study II
+- [++] 100% increased XP gain
+- Only available for [Keshik](#unique-unit-1-keshik)
 
 ### Specialists
 #### Scientist
@@ -229,7 +295,7 @@ All of the changes from vanilla Unciv and new content are listed here.<br>
 #### Unique Unit: Chi-Ko-Nu
 - [=] Replaces Crossbowman
 - [++] Cost: 100 in SuperCiv vs. 120 in vanilla & base unit
-- [+] Range Strength: 18 in SuperCiv & base unit vs. 14 in vanilla
+- [+] Range Strength: 20 in SuperCiv vs. 18 base unit vs. 14 in vanilla
 - [++] Gains the Logistics and **Great Generals I** promotion for free
 
 ### Denmark
@@ -252,8 +318,8 @@ All of the changes from vanilla Unciv and new content are listed here.<br>
 - [=] Replaces Rifleman
 - [++] Melee Strength: 39 in SuperCiv vs. 34 in vanilla & base unit
 - [++] Movement: 3 in SuperCiv vs. 2 in vanilla & base unit
-- [=] Buffs when fighting in Snow, Tundra, and Hills consolidated into a unit promotion
-- [++] Gains the Drill I promotion
+- [=] Buffs when fighting in Snow, Tundra, and Hills consolidated into a unit promotion^
+- [++] Gains the Drill I and ^[Arctic Warfare](#arctic-warfare) promotion
 
 #### Unique Unit 3: Viking Longship
 - [++] Replaces Trireme
@@ -292,12 +358,39 @@ All of the changes from vanilla Unciv and new content are listed here.<br>
 #### Unique Ability: Sun Never Sets
 - [=] +2 Movement for naval units
 - [++] +1 Movement for embarked Military units
-- [++] +5 Gold from every Lighthouse and Harbor
+- [++]\* +5 Gold from every Lighthouse and Harbor
+
+#### Unique Unit 1: Longbowman
+- [=] Replaces Crossbowman
+- [++] Cost: 100 in SuperCiv vs. 120 in vanilla & base unit
+- [++] Ranged Strength: 23 in SuperCiv vs. 18 in vanilla & base unit
+- [++] Gains the Extended Range and **Indirect Fire** promotion
+
+#### Unique Unit 2: Ship of the Line
+- [=] Replaces Frigate
+- [=] Melee Strength: 30 in SuperCiv & vanilla vs. 25 in base unit
+- [+] Ranged Strength: 40 in SuperCiv vs. 35 in vanilla vs. 28 in base unit
+- [+] +2 Sight in SuperCiv vs. +1 Sight in vanilla
+- [++] Gains the Supply promotion
 
 ### France 
 #### Unique Ability: Ancien Régime
 - [=] +2 Culture in cities before discovering Steam Power
-- [++] Land Melee units gain the Blitz and Quick Study promotions
+- [++]\* Land Melee units gain the Blitz and Quick Study promotions
+- [++] non-nuke Military units gain the Morale promotion
+
+#### Unique Unit 1: Musketeer
+- [=] Replaces Musketman
+- [++] Cost: 130 in SuperCiv vs. 150 in vanilla & base unit
+- [+] Melee Strength: 29 in SuperCiv vs. 28 in vanilla vs. 24 in base unit
+- [++] +15% Strength vs. Sword units
+- [++] Gains the Shock I promotion
+
+#### Unique Unit 2: Foreign Legion
+- [=] Replaces Great War Infantry
+- [++] Melee Strength: 55 in SuperCiv vs. 50 in vanilla & base unit
+- [+] +50%^ Strength in Foreign Land (SuperCiv) vs. +20% in Foreign Land (vanilla)
+- [+] Gains the Shock II and ^[Foreign Fighter](#foreign-fighter)
 
 ### Germany
 #### Unique Ability: Furor Teutonicus
@@ -305,12 +398,38 @@ All of the changes from vanilla Unciv and new content are listed here.<br>
 - [+] **40%** reduced maintenance costs for land units (vanilla: 25%)
 - [++] +5 Science and +2 Production in all cities starting from the Industrial era
 
+#### Unique Unit 1: Landsknecht
+- [=] Replaces Pikeman
+- [=] Cost: 45 in SuperCiv & vanilla vs. 90 in base unit
+- [++] Melee Strength: 19 in SuperCiv vs. 16 in vanilla & base unit
+- [++] Movement: 3 in SuperCiv vs. 2 in vanilla & base unit
+- [=] Can move immediately once bought
+- [++] Gains the Formation I promotion
+
+#### Unique Unit 2: Panzer
+- [=] Replaces Tank
+- [++] Cost: 350 in SuperCiv vs. 375 in vanilla & base unit
+- [=] Melee Strength: 80 in SuperCiv & vanilla vs. 70 in base unit
+- [=] Movement: 6 in SuperCiv & vanilla vs. 5 in base unit
+- [++]\* Gains the Blitz and Great Generals II promotion
+
 ### Greece
 #### Unique Ability: Hellenic League
 - [+] City-State influence degrades **60%** slower (vanilla: 50%)
 - [=] City-State influence recovers twice as fast as it normally would
 - [=] City-State territory always counts as friendly territory
 - [++] +50% Culture from City-States
+
+#### Unique Unit 1: Hoplite
+- [=] Replaces Spearman
+- [+] Melee Strength: 15 in SuperCiv vs. 13 in vanilla vs. 11 in base unit
+- [++]\* Gains the Formation II and [Phalanx Formation](#phalanx-formation) promotion
+
+#### Unique Unit 2: Companion Cavalry
+- [=] Replaces Horseman
+- [++] Cost: 60 in SuperCiv vs. 75 in vanilla & base unit
+- [++] Loses the ability to have no defensive terrain bonuses
+- [++] Gains the ability to move immediately once bought
 
 ### Inca
 #### Unique Ability: Great Andean Road
@@ -320,6 +439,19 @@ All of the changes from vanilla Unciv and new content are listed here.<br>
 - [++] +2 Culture from every Hill
 - [++] Land Military units gain the Mountaineer promotion
 
+#### Unique Unit: Slinger
+- [=] Replaces Archer
+- [=] Melee Strength: 4 in SuperCiv & vanilla vs. 5 in base unit
+- [++] Ranged Strength: 12 in SuperCiv vs. 7 in vanilla & base unit
+- [++] Movement: 4 in SuperCiv vs. 2 in vanilla & base unit
+- [++] Gains the Slinger Withdraw & **Barrage III** promotions
+
+#### Unique Improvement: Terrace Farm
+- [=] Unlocked with Construction
+- [+] Turns to build: 5 in SuperCiv vs. 7 in vanilla
+- [+] **+2 Food** on fresh water after Civil Service (vanilla: +1 Food)
+- [+] **+2 Food** on non-fresh water after Fertilizer (vanilla: +1 Food)
+
 ### India
 #### Unique Ability: Explosive Population Growth
 - [+] Name changed from "Population Growth"
@@ -328,6 +460,24 @@ All of the changes from vanilla Unciv and new content are listed here.<br>
 - [++] 50% increased growth in all cities
 - [++] Double quantity of Uranium produced
 - [++]\* +1 Culture and +2 Faith from every Uranium and Fallout
+
+#### Unique Building: Mughal Fort
+- [=] Replaces Castle
+- [=] Cost: 150 in SuperCiv & vanilla vs. 160 in base unit
+- [++] City Strength: 9 in SuperCiv vs. 7 in vanilla & base unit
+- [++] City Health: 40 in SuperCiv vs. 25 in vanilla & base unit
+- [=] Culture: 2 in SuperCiv & vanilla vs. 0 in base unit
+- [+] **+2 Gold and +2 Culture** after discovering Flight (vanilla: +1 Culture)
+
+#### Unique Unit 1: War Elephant
+- [=] Replaces Chariot Archer
+- [=] Does not require Horses
+- [+] Cost: 56 in SuperCiv & base unit vs. 70 in vanilla
+- [=] Melee Strength: 9 in SuperCiv & vanilla vs. 6 in base unit
+- [=] Ranged Strength: 11 in SuperCiv & vanilla vs. 10 in base unit
+- [+] Movement: 4 in SuperCiv & base unit vs. 3 in vanilla
+- [=] Loses the rough terrain penalty
+- [++] Gains the Barrage I promotion
 
 #### Unique Unit 2: Gandhi's Wrath
 - [++] Replaces Nuclear Missile
@@ -342,10 +492,37 @@ All of the changes from vanilla Unciv and new content are listed here.<br>
 - [++]\* +2 Science and +1 Food from every Forest and Jungle tiles
 - [++] Land Melee units gain the Woodsman promotion
 
+#### Unique Building: Longhouse
+- [=] Replaces Workshop
+- [=] Cost: 100 in SuperCiv & vanilla vs. 120 in base building
+- [++] Production: 3 in SuperCiv vs. 2 in vanilla & base building
+- [++] Maintenance: 1 in SuperCiv vs. 2 in vanilla & base building
+- [++] +1 Production from Forest and **Jungle** tiles in the city (does not provide extra Production from Jungle in vanilla)
+
+#### Unique Unit: Mohawk Warrior
+- [=] Replaces Swordsman
+- [=] Does not require Iron
+- [++] Melee Strength: 16 in SuperCiv vs. 14 in vanilla & base unit
+- [++] Movement: 3 in SuperCiv vs. 2 in vanilla & base unit
+- [=] +33% Strength in Forest and Jungle
+- [++] Gains the Guerrilla Warfare promotion
+
 ### Japan
 #### Unique Ability: Bushido
 - [=] Units fight with full strength even when damaged
 - [++]\* +2 Movement and +20% Strength for Military units when at war
+
+#### Unique Unit 1: Samurai
+- [=] Replaces Longswordsman
+- [++] Melee Strength: 27 in SuperCiv vs. 21 in vanilla & base unit
+- Gains the [=] Shock I, [++] Trump Card, and [+] **Great Generals III** promotion (vanilla: Great Generals II)
+
+#### Unique Unit 2: Zero
+- [=] Replaces Fighter
+- [=] Does not require Oil
+- [++]\* Melee & Ranged Strength: 50 in SuperCiv vs. 45 in vanilla & base unit
+- [=] +33% Strength vs. Fighters
+- [++] Gains the Sortie promotion
 
 ### Korea
 #### Unique Ability: Scholars of the Jade Hall
@@ -353,11 +530,40 @@ All of the changes from vanilla Unciv and new content are listed here.<br>
 - [=] Receive a tech boost when scientific buildings or wonders are built in the capital
 - [++] Receive a free Great Scientist upon discovering Education
 
+#### Unique Unit 1: Hwach'a
+- [=] Replaces Trebuchet
+- [=] Melee Strength: 11 in SuperCiv & vanilla vs. 12 in base unit
+- [+] Ranged Strength: 28 in SuperCiv vs. 26 in vanilla vs. 14 in base unit
+- [++] Range: 3 in SuperCiv vs. 2 in vanilla & base unit
+- [=] Loses the bonus when attacking cities and the limited sight penalty
+- [++] Gains the Volley promotion
+
+#### Unique Unit 2: Turtle Ship
+- [=] Replaces Caravel
+- [=] Melee Strength: 36 in SuperCiv & vanilla vs. 20 in base unit
+- [++] Cost: 110 in SuperCiv vs. 120 in vanilla & base unit
+- [=] Loses the increased sight bonus 
+- [+] Loses the inability to enter ocean tiles (vanilla has this ability)
+- [+] Regains the ability to withdraw before melee (vanilla loses this ability)
+
 ### Mongolia
 #### Unique Ability: Mongol Terror
 - [=] 30% increased Strength when fighting City-State units and cities
 - [+]\* **+2** Movement (vanilla: +1) for Mounted and **Armored** units (Armored units don't gain Movement in vanilla)
 - [++] Double quantity of Horses produced
+
+#### Unique Unit 1: Keshik
+- [=] Replaces Knight
+- [+] Ranged Strength: 21 in SuperCiv vs. 16 in vanilla vs. 0 in base unit
+- [=] Loses the Strength penalty vs cities
+- [+]\* Gains the **Great Generals II** and **Quick Study II** promotions (gains a lower level of given promotions in vanilla)
+
+#### Unique Unit 2: Khan
+- [=] Replaces Great General
+- [+] Movement: 6 in SuperCiv vs. 5 in vanilla vs. 4 in base unit
+- [+] All adjacent units heal +30 HP when healing
+- [=] +15 HP when healing
+- [++] Gains the Medic II promotion
 
 ### The Ottomans
 #### Unique Ability: Barbary Corsairs
