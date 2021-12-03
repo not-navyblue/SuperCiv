@@ -102,19 +102,19 @@
 		"name": "City Raider I",
 		"prerequisites": ["Shock I", "Drill I"],
 		"uniques": ["[+15]% Strength <vs cities>", "Earn [33]% of the damage done to [City] units as [Gold]"],
-		"unitTypes": ["Sword","Gunpowder"]
+		"unitTypes": ["Sword","Gunpowder","Mounted","Armored"]
 	},
 	{
 		"name": "City Raider II",
 		"prerequisites": ["City Raider I"],
 		"uniques": ["[+15]% Strength <vs cities>", "Earn [33]% of the damage done to [City] units as [Gold]"],
-		"unitTypes": ["Sword","Gunpowder"]
+		"unitTypes": ["Sword","Gunpowder","Mounted","Armored"]
 	},
 	{
 		"name": "City Raider III",
 		"prerequisites": ["City Raider II"],
 		"uniques": ["[+20]% Strength <vs cities>", "Earn [33]% of the damage done to [City] units as [Gold]"],
-		"unitTypes": ["Sword","Gunpowder"]
+		"unitTypes": ["Sword","Gunpowder","Mounted","Armored"]
 	},
 	
 	{
@@ -543,9 +543,11 @@
 		"prerequisites": ["Shock III", "Drill III", "Accuracy III", "Barrage III"],
 		"uniques": [
 			"Special unit promotion", // added for flavor
+			"Incompatible with [Defeatist]",
+			"Incompatible with [Cathartic Bloodlust]",
+			"Incompatible with [Merciless]",
 			"[+75]% Strength <when below [30] HP>",
-			"[-10]% Strength <when above [90] HP>",
-			"Incompatible with [Defeatist]"
+			"[-10]% Strength <when above [90] HP>"
 		],
 		"unitTypes": ["Sword", "Gunpowder", "Archery", "Ranged Gunpowder", "Mounted", "Armored", "Siege"]
 	},
@@ -554,10 +556,39 @@
 		"prerequisites": ["Shock III", "Drill III", "Accuracy III", "Barrage III"],
 		"uniques": [
 			"Special unit promotion",
+			"Incompatible with [Trump Card]",
+			"Incompatible with [Cathartic Bloodlust]",
+			"Incompatible with [Merciless]",
 			"[+50]% Strength <when above [50] HP>",
 			"[+4] Movement <when below [30] HP>",
-			"[-10]% Strength <when below [30] HP>",
-			"Incompatible with [Trump Card]"
+			"[-10]% Strength <when below [30] HP>"
+		],
+		"unitTypes": ["Sword", "Gunpowder", "Archery", "Ranged Gunpowder", "Mounted", "Armored", "Siege"]
+	},
+	{
+		"name": "Cathartic Bloodlust",
+		"prerequisites": ["Shock III", "Drill III", "Accuracy III", "Barrage III"],
+		"uniques": [
+			"Special unit promotion",
+			"Incompatible with [Trump Card]",
+			"Incompatible with [Defeatist]",
+			"Incompatible with [Merciless]",
+			"Heals [100] damage if it kills a unit",
+			"[+10]% Strength <when below [50] HP>",
+			"[-10]% Strength <when above [50] HP>"
+		],
+		"unitTypes": ["Sword", "Gunpowder", "Archery", "Ranged Gunpowder", "Mounted", "Armored", "Siege"]
+	},
+	{
+		"name": "Merciless",
+		"prerequisites": ["Shock III", "Drill III", "Accuracy III", "Barrage III"],
+		"uniques": [
+			"Special unit promotion",
+			"Incompatible with [Trump Card]",
+			"Incompatible with [Defeatist]",
+			"Incompatible with [Cathartic Bloodlust]",
+			"[+80]% Strength <when attacking> <vs [Wounded] units> <when above [50] HP>",
+			"[-20]% Strength <when below [20] HP>"
 		],
 		"unitTypes": ["Sword", "Gunpowder", "Archery", "Ranged Gunpowder", "Mounted", "Armored", "Siege"]
 	},
@@ -576,11 +607,11 @@
 		"uniques": ["[Great General] is earned [100]% faster"]
 	},
 	{
-		"name": "Great Generals III", // only for Samurai and subsequent upgrades
+		"name": "Great Generals III", // only for Samurai, Legion and their subsequent upgrades
 		"uniques": ["[Great General] is earned [150]% faster"]
 	},
 	{
-		"name": "Quick Study", // only for French land units
+		"name": "Quick Study", // only for French land units, Ballista and their subsequent upgrades
 		"uniques": ["[50]% Bonus XP gain"]
 	},
 	{
@@ -612,7 +643,7 @@
 		"uniques": ["[+30]% Strength decreasing with distance from the capital"]
 	},
 	{
-		"name": "Arctic Warfare", // only for Norwegian Ski Infantry and subsequent upgrades
+		"name": "Arctic Warfare", // only for Norwegian Ski Infantry, Cossack and their subsequent upgrades
 		"uniques": [
 			"[+25]% Strength <when fighting in [Snow] tiles>",
 			"[+25]% Strength <when fighting in [Tundra] tiles>",
@@ -632,6 +663,54 @@
 		"name": "Phalanx Formation", // only for Hoplite and subsequent upgrades
 		"uniques": [
 			"+[15]% Strength for [Military] units which have another [Military] unit in an adjacent tile"
+		]
+	},
+	{
+		"name": "Adaptive Warfare", // only for Khan
+		"uniques": [
+			"[+10]% Strength <during the Ancient era>",
+			"[+20]% Strength <during the Classical era>",
+			"[+30]% Strength <during the Medieval era>",
+			"[+50]% Strength <during the Renaissance era>",
+			"[+70]% Strength <during the Industrial era>",
+			"[+170]% Strength <during the Modern era>",
+			"[+220]% Strength <during the Atomic era>",
+			"[+350]% Strength <during the Information era>",
+			"[+400]% Strength <during the Future era>"
+		]
+	},
+	{
+		"name": "Pearl of the Orient (Philippines)", // only for Filipino units from Philippines via Malacanang Palace
+		"uniques": [
+			"[+35]% Strength <when defending> <in [Friendly Land] tiles>",
+			"[+25]% Strength <when defending> <in [Foreign Land] tiles>",
+			"[+20]% Strength <for [Lantaka (Philippines)] units>",
+			"[+20]% Strength <for [Katipunero] units>"
+		]
+	},
+	{
+		"name": "Pearl of the Orient (Filipinas)", // only for Filipino units from Filipinas via Malacanang Palace
+		"uniques": [
+			"[+35]% Strength <when defending> <in [Friendly Land] tiles>",
+			"[+25]% Strength <when defending> <in [Foreign Land] tiles>",
+			"[+20]% Strength <for [Lantaka (Filipinas)] units>",
+			"[+20]% Strength <for [Principalia] units>"
+		]
+	},
+	{
+		"name": "Pearl of the Orient (Tondo)", // only for Filipino units from Tondo via Malacanang Palace
+		"uniques": [
+			"[+35]% Strength <when defending> <in [Friendly Land] tiles>",
+			"[+25]% Strength <when defending> <in [Foreign Land] tiles>",
+			"[+20]% Strength <for [Lantaka (Tondo)] units>",
+			"[+20]% Strength <for [Maharlika] units>"
+		]
+	},
+	{
+		"name": "Final Singularity", // only for Black Hole units via TON 618
+		"uniques": [
+			"[+100]% Strength <when below [20] HP>",
+			"[-20]% Strength for enemy [Military] units in adjacent [All] tiles"
 		]
 	}
 ]

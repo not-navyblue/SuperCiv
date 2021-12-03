@@ -49,11 +49,12 @@
 		"unitType": "Sword",
 		"uniqueTo": "Polynesia",
 		"replaces": "Warrior",
-		"movement": 2,
-		"strength": 8,
+		"movement": 5,
+		"strength": 10,
 		"cost": 40,
 		"obsoleteTech": "Metal Casting",
-		"promotions": ["Haka War Dance"],
+		"uniques": ["Can build [Pa] improvements on tiles"],
+		"promotions": ["Haka War Dance", "Amphibious"],
 		"upgradesTo": "Swordsman",
 		"attackSound": "nonmetalhit"
 	},
@@ -325,12 +326,13 @@
 		"replaces": "Spearman",
 		"uniqueTo": "Persia",
 		"movement": 2,
-		"strength": 12,
+		"strength": 16,
 		"cost": 56,
 		"requiredTech": "Bronze Working",
 		"obsoleteTech": "Civil Service",
 		"upgradesTo": "Pikeman",
 		"uniques": ["[+50]% Strength <vs [Mounted] units>", "[+10] HP when healing"],
+		"promotions": ["Formation I", "Cathartic Bloodlust"],
 		"attackSound": "metalhit"
 	},
 	{
@@ -466,12 +468,13 @@
 		"movement": 2,
 		"strength": 8,
 		"rangedStrength": 10,
-		"cost": 75,
+		"cost": 50,
 		"requiredTech": "Mathematics",
 		"obsoleteTech": "Physics",
 		"upgradesTo": "Trebuchet",
 		"uniques": ["[+200]% Strength <vs cities> <when attacking>", "No defensive terrain bonus",
-			"Must set up to ranged attack", "[-1] Sight"],
+			"Must set up to ranged attack"],
+		"promotions": ["Quick Study"],
 		"hurryCostModifier": 20,
 		"attackSound": "throw"
 	},
@@ -505,14 +508,15 @@
 		"unitType": "Sword",
 		"uniqueTo": "Rome",
 		"replaces": "Swordsman",
-		"movement": 2,
-		"strength": 17,
+		"movement": 5,
+		"strength": 19,
 		"cost": 75,
 		"requiredTech": "Iron Working",
 		"upgradesTo": "Longswordsman",
 		"obsoleteTech": "Gunpowder",
 		"requiredResource": "Iron",
-		"uniques": ["Can build [Road] improvements on tiles", "Can build [Fort] improvements on tiles"],
+		"uniques": ["Can build [Road] improvements on tiles", "Can build [Roman Fort] improvements on tiles"],
+		"promotions": ["Great Generals III"],
 		"hurryCostModifier": 20,
 		"attackSound": "metalhit"
 	},
@@ -629,12 +633,13 @@
 		"uniqueTo": "Spain",
 		"movement": 4,
 		"strength": 20,
-		"cost": 135,
+		"cost": 115,
 		"requiredTech": "Chivalry",
 		"requiredResource": "Horses",
 		"upgradesTo": "Cavalry",
 		"obsoleteTech": "Military Science",
-		"uniques": ["Can move after attacking","No defensive terrain bonus", "Founds a new city <on foreign continents>", "[+2] Sight", "Defense bonus when embarked"],
+		"uniques": ["Can move after attacking", "Founds a new city <on foreign continents>", "[+2] Sight", "Defense bonus when embarked"],
+		"promotions": ["Sentry"],
 		"attackSound": "horse"
 		//Conquistador should have no penalty attacking cities
 		//Ability to found new cities can only be used on a foreign continent that does not contain the Spanish capital.
@@ -644,13 +649,14 @@
 		"unitType": "Mounted",
 		"replaces": "Knight",
 		"uniqueTo": "Siam",
-		"movement": 3,
+		"movement": 4,
 		"strength": 25,
-		"cost": 120,
+		"cost": 90,
 		"requiredTech": "Chivalry",
 		"obsoleteTech": "Military Science",
 		"upgradesTo": "Cavalry",
 		"uniques": ["Can move after attacking","No defensive terrain bonus","[+50]% Strength <vs [Mounted] units>","[-33]% Strength <vs cities>"],
+		"promotions": ["Charge"],
 		"attackSound": "elephant"
 	},
 	{
@@ -659,13 +665,14 @@
 		"replaces": "Knight",
 		"uniqueTo": "Songhai",
 		"movement": 4,
-		"strength": 20,
+		"strength": 26,
 		"cost": 110,
 		"requiredTech": "Chivalry",
 		"requiredResource": "Horses",
 		"upgradesTo": "Cavalry",
 		"obsoleteTech": "Military Science",
 		"uniques": ["Can move after attacking","No defensive terrain bonus"],
+		"promotions": ["City Raider I", "Trump Card"],
 		"attackSound": "horse"
 	},
 	{
@@ -868,12 +875,13 @@
 		"replaces": "Musketman",
 		"uniqueTo": "The Ottomans",
 		"movement": 2,
-		"strength": 24,
+		"strength": 26,
 		"cost": 150,
 		"requiredTech": "Gunpowder",
 		"upgradesTo": "Rifleman",
 		"obsoleteTech": "Rifling",
 		"uniques": ["Heals [50] damage if it kills a unit", "[+25]% Strength <when attacking>"],
+		"promotions": ["Shock I", "March"],
 		"attackSound": "shot"
 	},
 	{
@@ -897,12 +905,13 @@
 		"replaces": "Musketman",
 		"uniqueTo": "Spain",
 		"movement": 2,
-		"strength": 26,
-		"cost": 160,
+		"strength": 29,
+		"cost": 140,
 		"requiredTech": "Gunpowder",
 		"upgradesTo": "Rifleman",
 		"obsoleteTech": "Rifling",
 		"uniques": ["[+50]% Strength <vs [Mounted] units>"],
+		"promotions": ["Formation II"],
 		"attackSound": "shot"
 	},
 	{
@@ -982,14 +991,14 @@
 		"unitType": "Mounted",
 		"replaces": "Lancer",
 		"uniqueTo": "The Ottomans",
-		"movement": 5,
-		"strength": 25,
+		"movement": 6,
+		"strength": 28,
 		"cost": 185,
 		"requiredTech": "Metallurgy",
 		"requiredResource": "Horses",
 		"uniques": ["Can move after attacking","No defensive terrain bonus","[-33]% Strength <vs cities>",
 			"[+1] Sight", "No movement cost to pillage"],
-		"promotions": ["Formation I"],
+		"promotions": ["Formation I", "Sentry"],
 		"upgradesTo": "Anti-Tank Gun",
 		"obsoleteTech": "Combined Arms",
 		"attackSound": "horse"
@@ -1113,13 +1122,14 @@
 		"uniqueTo": "Russia",
 		"movement": 4,
 		"strength": 34,
-		"cost": 225,
+		"cost": 200,
 		"requiredTech": "Military Science",
 		"obsoleteTech": "Combustion",
 		"requiredResource": "Horses",
 		"upgradesTo": "Landship",
 		"uniques": ["Can move after attacking","No defensive terrain bonus",
 			"[-33]% Strength <vs cities>", "[+50]% Strength <vs [Wounded] units>"],
+		"promotions": ["Arctic Warfare", "Merciless"],
 		"attackSound": "horse"
 	},
 	{
@@ -1686,6 +1696,18 @@
 		"religiousStrength": 1000
 	},
 	{
+		"name": "Great Farmer",
+		"unitType": "Civilian",
+		"uniques": [
+			"Can start an [8]-turn golden age",
+			"Can construct [Hacienda]",
+			"Great Person - [Food]",
+			"Unbuildable",
+			"Uncapturable"
+		],
+		"movement": 3
+	},
+	{
 		"name": "Great General",
 		"unitType": "Civilian",
 		"uniques": ["Can start an [8]-turn golden age", "Bonus for units in 2 tile radius 15%", "Can construct [Citadel]",
@@ -1694,9 +1716,10 @@
 	},
 	{
 		"name": "Khan",
-		"unitType": "Civilian",
+		"unitType": "Mounted",
 		"uniqueTo": "Mongolia",
 		"replaces": "Great General",
+		"strength": 20,
 		"uniques": [
 			"Can start an [8]-turn golden age",
 			"Bonus for units in 2 tile radius 15%",
@@ -1707,8 +1730,8 @@
 			"Unbuildable", 
 			"Uncapturable"
 		],
-		"movement": 6,
-		"promotions": ["Medic II"]
+		"promotions": ["Medic II", "Adaptive Warfare"],
+		"movement": 6
 	},
 
 	/* Religious units */

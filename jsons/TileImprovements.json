@@ -8,7 +8,8 @@
 		"techRequired": "Agriculture",
 		"uniques": ["Can also be built on tiles adjacent to fresh water", 
 			"[+1 Food] from [Fresh water] tiles <after discovering [Civil Service]>",
-			"[+1 Food] from [non-fresh water] tiles <after discovering [Fertilizer]>"],
+			"[+1 Food] from [non-fresh water] tiles <after discovering [Fertilizer]>",
+			"[+2 Food] from every adjacent [Hacienda]"],
 		"shortcutKey": "F"
 	},
 	{
@@ -197,6 +198,18 @@
 		"uniques": ["Great Improvement"]
 	},
 	{
+		"name": "Hacienda",
+		"food": 4,
+		"uniques": [
+			"Great Improvement",
+			"[+1 Food] for each adjacent [Farm]",
+			"[+1 Food] for each adjacent [Wet Farm]",
+			"[+1 Food] for each adjacent [Terrace farm]",
+			"[+1 Food, +2 Production] from [Fresh water] tiles <after discovering [Civil Service]>",
+			"[+1 Food, +2 Production] from [non-fresh water] tiles <after discovering [Fertilizer]>"
+		]
+	},
+	{
 		"name": "Citadel",
 		"uniques": ["Great Improvement", "Gives a defensive bonus of [100]%", "Adjacent enemy units ending their turn take [30] damage", "Can be built just outside your borders"],
         "civilopediaText": [{"text":"Constructing it will take over the tiles around it and assign them to your closest city"}]
@@ -222,10 +235,41 @@
 		"name": "Moai",
 		"uniqueTo": "Polynesia",
 		"culture": 2,
+		"happiness": 2,
 		"turnsToBuild": 4,
-		"uniques": ["Can only be built on [Coastal] tiles", "[+1 Culture] for each adjacent [Moai]", "[+2 Gold, +1 Culture] <after discovering [Flight]>"],
+		"uniques": ["Can only be built on [Coastal] tiles", "[+1 Culture, +1 Happiness] for each adjacent [Moai]", "[+2 Gold, +1 Culture] <after discovering [Flight]>"],
 		"techRequired": "Construction",
 		"shortcutKey": "M"
+	},
+	
+	{
+		"name": "Pa",
+		"uniqueTo": "Polynesia"
+		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Snow","Forest","Jungle"],
+		"turnsToBuild": 2,
+		"techRequired": "Agriculture",
+		"uniques": [
+			"Can be built outside your borders", 
+			"Gives a defensive bonus of [60]%",
+			"Does not need removal of [Forest]",
+			"Does not need removal of [Jungle]",
+			"Obsolete with [Metal Casting]"
+		],
+		"shortcutKey": "O"
+	},
+	
+	{
+		"name": "Roman Fort",
+		"uniqueTo": "Rome"
+		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Snow","Forest","Jungle"],
+		"turnsToBuild": 2,
+		"techRequired": "Iron Working",
+		"uniques": [
+			"Can be built outside your borders", 
+			"Gives a defensive bonus of [75]%",
+			"Obsolete with [Gunpowder]"
+		],
+		"shortcutKey": "O"
 	},
 	
 	{
@@ -238,7 +282,8 @@
 			"Cannot be built on [Bonus resource] tiles",
 			"[+1 Food] for each adjacent [Mountain]",
 			"[+2 Food] on [Fresh water] tiles <after discovering [Civil Service]>",
-			"[+2 Food] on [non-fresh water] tiles <after discovering [Fertilizer]>"
+			"[+2 Food] on [non-fresh water] tiles <after discovering [Fertilizer]>",
+			"[+2 Food] from every adjacent [Hacienda]"
 		],
 		"techRequired": "Construction",
 		"shortcutKey": "F"

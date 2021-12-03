@@ -137,7 +137,7 @@
 		"maintenance": 2,
 		"food": 2,
 		"production": 1,
-		"specialistSlots": {"Farmer": 2},
+		"specialistSlots": {"Farmer": 1},
 		"hurryCostModifier": 25,
 		"uniques": ["Must be on [River]"],
 		"requiredTech": "The Wheel"
@@ -148,7 +148,7 @@
 		"uniqueTo": "Aztecs",
 		"food": 3,
 		"production": 1,
-		"specialistSlots": {"Farmer": 2},
+		"specialistSlots": {"Farmer": 1},
 		"uniques": ["[+3 Food] from [Lakes] tiles [in this city]", "Must be next to [Fresh water]"],
 		"hurryCostModifier": 25,
 		"maintenance": 0,
@@ -205,9 +205,14 @@
 		"replaces": "Barracks",
 		"uniqueTo": "Russia",
 		"hurryCostModifier": 25,
-		"maintenance": 1,
-		"uniques": ["-[25]% Culture cost of acquiring tiles [in this city]","-[25]% Gold cost of acquiring tiles [in this city]",
-			"New [Military] units start with [15] Experience [in this city]", "Destroyed when the city is captured"],
+		"maintenance": 0,
+		"uniques": [
+			"-[25]% Culture cost of acquiring tiles [in this city]",
+			"-[25]% Gold cost of acquiring tiles [in this city]",
+			"New [Military] units start with [45] Experience [in this city]", 
+			"All newly-trained [relevant] units [in this city] gain the [Cathartic Bloodlust] promotion",
+			"Destroyed when the city is captured"
+		],
 		"requiredTech": "Bronze Working"
 	},
 	{
@@ -329,9 +334,11 @@
 		"replaces": "Temple",
 		"uniqueTo": "Songhai",
 		"maintenance": 0,
+		"cost": 80,
 		"hurryCostModifier": 25,
-		"culture": 2,
+		"culture": 3,
 		"faith": 2,
+		"cityHealth": 20,
 		"specialistSlots": {"Priest": 1},
 		"requiredBuilding": "Shrine",
 		"requiredTech": "Philosophy"
@@ -577,13 +584,17 @@
 		"name": "Wat",
 		"replaces": "University",
 		"uniqueTo": "Siam",
-		"maintenance": 2,
+		"maintenance": 1,
 		"hurryCostModifier": 15,
 		"percentStatBonus": {"science": 33},
 		"specialistSlots": {"Scientist": 2},
 		"culture": 3,
+		"science": 2,
 		"requiredBuilding": "Library",
-		"uniques": ["[+2 Science] from [Jungle] tiles [in this city]"],
+		"uniques": [
+			"[+2 Science] from [Jungle] tiles [in this city]",
+			"[+2 Culture] from [Jungle] tiles [in this city]",
+		],
 		"requiredTech": "Education"
 	},
 	{
@@ -722,11 +733,12 @@
 		"name": "Satrap's Court",
 		"replaces": "Bank",
 		"uniqueTo": "Persia",
-		"gold": 2,
+		"gold": 5,
 		"specialistSlots": {"Merchant": 1},
 		"happiness": 2,
 		"hurryCostModifier": 15,
-		"percentStatBonus": {"gold": 25},
+		"percentStatBonus": {"gold": 40},
+		"uniques": ["[+5 Gold] [in all cities] <during a Golden Age>"],
 		"requiredBuilding": "Market",
 		"requiredTech": "Banking"
 	},
@@ -1073,6 +1085,12 @@
 		"uniques": ["Must be next to [Desert]", "Cannot be built with [Nuclear Plant]"]
 	},
 	{
+		"name": "Recycling Center",
+		"maintenance": 2,
+		"requiredTech": "Ecology",
+		"uniques": ["Provides [3] [Aluminum]","Limited to [7] per Civilization"]
+	},
+	{
 		"name": "Sydney Opera House",
 		"isWonder": true,
 		"greatPersonPoints": {"Great Artist": 2},
@@ -1182,9 +1200,9 @@
 
 	{
 		"name": "Utopia Project",
-		"cost": 1500,
+		"cost": 1250,
 		"isNationalWonder": true,
-		"uniques": ["Hidden until [5] social policy branches have been completed", "Triggers a global alert upon build start",
+		"uniques": ["Hidden until [6] social policy branches have been completed", "Triggers a global alert upon build start",
 			"Triggers a Cultural Victory upon completion", "Hidden when [Cultural] Victory is disabled"]
 	},
 	
@@ -1227,4 +1245,110 @@
 		"specialistSlots": {"Priest": 1},
 		"uniques": ["Unbuildable", "Hidden when religion is disabled"]
 	},
+	
+	// Buildings that require certain mods
+	
+	{
+		"name": "Malacanang Palace (Philippines)", // requires ph bonifacio unciv, does nothing without the mod
+		"isNationalWonder": true,
+		"uniqueTo": "Philippines",
+		"replaces": "Palace",
+		"production": 7,
+		"science": 7,
+		"gold": 7,
+		"culture": 3,
+		"cityStrength": 4,
+		"cost": 1,
+		"uniques": [
+			"Indicates the capital city",
+			"May buy [UnHax Mode - Base] buildings for [0] [Gold] [in this city]", // UnHax compatibility, does nothing without the mod
+			"[Military] units gain the [Pearl of the Orient (Philippines)] promotion",
+			"[Lantaka (Philippines)] units gain the [Logistics] promotion", // requires Project Lantaka, does nothing without the mod
+			"[Katipunero] units gain the [Guerrilla Warfare] promotion",
+			"[Katipunero] units gain the [Woodsman] promotion"
+		]
+	},
+	{
+		"name": "Malacanang Palace (Filipinas)", // requires Project Felipe, does nothing without the mod
+		"isNationalWonder": true,
+		"uniqueTo": "Filipinas",
+		"replaces": "Palace",
+		"production": 7,
+		"science": 7,
+		"gold": 7,
+		"culture": 3,
+		"cityStrength": 4,
+		"cost": 1,
+		"uniques": [
+			"Indicates the capital city",
+			"May buy [UnHax Mode - Base] buildings for [0] [Gold] [in this city]",
+			"[Military] units gain the [Pearl of the Orient (Filipinas)] promotion",
+			"[Lantaka (Filipinas)] units gain the [Logistics] promotion",
+			"[Principalia] units gain the [Charge] promotion",
+			"[Principalia] units gain the [Blitz] promotion",
+		]
+	},
+	{
+		"name": "Malacanang Palace (Tondo)", // requires Project Tondo, does nothing without the mod
+		"isNationalWonder": true,
+		"uniqueTo": "Tondo",
+		"replaces": "Palace",
+		"production": 7,
+		"science": 7,
+		"gold": 7,
+		"culture": 3,
+		"cityStrength": 4,
+		"cost": 1,
+		"uniques": [
+			"Indicates the capital city",
+			"May buy [UnHax Mode - Base] buildings for [0] [Gold] [in this city]",
+			"[Military] units gain the [Pearl of the Orient (Tondo)] promotion",
+			"[Lantaka (Tondo)] units gain the [Logistics] promotion",
+			"[Maharlika] units gain the [Guerrilla Warfare] promotion",
+			"[Maharlika] units gain the [Blitz] promotion",
+		]
+	},
+	
+	// Requires Wars Mod
+	{
+		"name": "TON 618", // Black Hole
+		"isNationalWonder": true,
+		"uniqueTo": "Black Hole",
+		"replaces": "Palace",
+		"production": 5,
+		"science": 4,
+		"gold": 4,
+		"culture": 2,
+		"cityStrength": 6,
+		"cityHealth": 10,
+		"cost": 1,
+		"uniques": [
+			"Indicates the capital city",
+			"May buy [UnHax Mode - Base] buildings for [0] [Gold] [in this city]",
+			"[Military] units gain the [Final Singularity] promotion"
+		]
+	},
+	
+	// Requires UnHax
+	{
+		"name": "UnHax Mode - SuperCiv",
+		"uniques": [
+			"[{non-air} {Military}] units gain the [Adaptive Warfare] promotion",
+			"[{Fighter} {Military}] units gain the [Adaptive Warfare] promotion",
+			"[{Bomber} {Military}] units gain the [Adaptive Warfare] promotion",
+			"All newly-trained [{non-air} {Military}] units [in all cities] gain the [Great Generals III] promotion",
+			"All newly-trained [{Fighter} {Military}] units [in all cities] gain the [Great Generals III] promotion",
+			"All newly-trained [{Bomber} {Military}] units [in all cities] gain the [Great Generals III] promotion",
+			"All newly-trained [{non-air} {Military}] units [in all cities] gain the [Quick Study II] promotion",
+			"All newly-trained [{Fighter} {Military}] units [in all cities] gain the [Quick Study II] promotion",
+			"All newly-trained [{Bomber} {Military}] units [in all cities] gain the [Quick Study II] promotion",
+			"All newly-trained [{Land} {Military}] units [in this city] receive the [Arctic Warfare] promotion",
+			"All newly-trained [{non-air} {Military}] units [in this city] receive the [Foreign Fighter] promotion",
+			"All newly-trained [{non-air} {Military}] units [in this city] receive the [Phalanx Formation] promotion",
+			"Can only be built [in capital]",
+			"Destroyed when the city is captured",
+			"Unbuildable",
+			"Unsellable"
+		]
+	}
 ]

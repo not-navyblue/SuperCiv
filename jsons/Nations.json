@@ -685,12 +685,11 @@
 		"innerColor": [90,0,10],
 		"favoredReligion": "Islam",
 		"uniqueName": "River Warlord",
-		"uniqueText": "Receive triple Gold from Barbarian encampments and pillaging cities. Embarked units can defend themselves. Certain melee units gain the City Raider I promotion, and naval melee units gain the Coastal Raider I promotion.",
+		"uniqueText": "Receive triple Gold from Barbarian encampments and pillaging cities. Embarked units can defend themselves. Land Melee units gain the City Raider I promotion, and naval melee units gain the Coastal Raider I promotion.",
 		"uniques": [
 			"Receive triple Gold from Barbarian encampments and pillaging Cities", 
 			"Embarked units can defend themselves",
-			"[Sword] units gain the [City Raider I] promotion",
-			"[Gunpowder] units gain the [City Raider I] promotion",
+			"[{Land} {Melee}] units gain the [City Raider I] promotion",
 			"[Melee Water] units gain the [Coastal Raider II] promotion"
 		],
 		"cities": ["Gao","Tombouctu","Jenne","Taghaza","Tondibi","Kumbi Saleh","Kukia","Walata","Tegdaoust","Argungu","Gwandu",
@@ -930,7 +929,8 @@
 		"uniqueText": "Gain 120 Influence after gifting a Great Person to a City-State. When declaring friendship, both parties gain a 25% boost to Great Person generation.",
 		"uniques": [
 			"Gain [120] Influence with a [Great Person] gift to a City-State", 
-			"When declaring friendship, both parties gain a [25]% boost to great person generation"
+			"When declaring friendship, both parties gain a [40]% boost to great person generation",
+			"[+5 Production, +5 Gold] from every [Workshop]",
 		],
 		"cities": ["Stockholm","Uppsala","Gothenburg","Malmö","Linköping","Kalmar","Skara","Västerås","Jönköping",
 		"Visby","Falun","Norrköping","Gävle","Halmstad","Karlskrona","Hudiksvall","Örebro","Umeå","Karlstad",
@@ -962,8 +962,9 @@
 		"uniqueName": "Diplomatic Relations",
 		"uniqueText": "Can spend Gold to annex or puppet a City-State that has been your ally for 5 turns. When declaring friendship, both parties gain a 10% boost to Great Person generation.",
 		"uniques": [
-			"Can spend Gold to annex or puppet a City-State that has been your ally for [5] turns.",
-			"When declaring friendship, both parties gain a [10]% boost to great person generation"
+			"Can spend Gold to annex or puppet a City-State that has been your ally for [3] turns.",
+			"When declaring friendship, both parties gain a [10]% boost to great person generation",
+			"[+3 Production, +3 Science, +3 Culture] [in all cities] <when not at war>"
 		],
 		"cities": ["Vienna", "Salzburg", "Graz", "Linz", "Klagenfurt", "Bregenz", "Innsbruck", "Kitzbühel",
 			"St. Pölten", "Eisenstadt", "Villach", "Zwettl", "Traun", "Wels", "Dornbirn", "Feldkirch",
@@ -1156,7 +1157,7 @@
 		"innerColor": [24,63,66], // color picker: 1f4a4d
 		"favoredReligion": "Christianity",
 		"uniqueName": "The Long Count",
-		"uniqueText": "Receive a free Great Person at the end of every Maya Long Count calendar cycle (every 394 years), after researching Theology. Each bonus person can only be chosen once. Once The Long Count activates, the year on the world screen displays as the traditional Mayan Long Count. Gain +3 Science in all cities, increasing by 1 for each time The Maya reached a new era, for a total of up to +10 Science starting from the Information era.",
+		"uniqueText": "Receive a free Great Person at the end of every Maya Long Count calendar cycle (every 394 years), after researching Theology. Each bonus person can only be chosen once. Once The Long Count activates, the year on the world screen displays as the traditional Mayan Long Count. Gain +3 Science in all cities, increasing by 1 for each time The Maya reached a new era, for a total of up to +10 Science starting from the Information era. Gain a free Observatory in all cities.",
 		"uniques": [
 			"Receive a free Great Person at the end of every [Maya Long Count calendar cycle] (every 394 years), after researching [Theology]. Each bonus person can only be chosen once.",
 			"Once The Long Count activates, the year on the world screen displays as the traditional Mayan Long Count.",
@@ -1167,7 +1168,8 @@
 			"[+1 Science] [in all cities] <starting from the [Industrial era]>",
 			"[+1 Science] [in all cities] <starting from the [Modern era]>",
 			"[+1 Science] [in all cities] <starting from the [Atomic era]>",
-			"[+1 Science] [in all cities] <starting from the [Information era]>"
+			"[+1 Science] [in all cities] <starting from the [Information era]>", 
+			"Gain a free [Observatory] [in all cities]"
 		],
  		// Parameters: tech, comment, amount, comment. Compare "Free [Great General] appears" as used by policies
 		"cities": ["Palenque","Tikal","Chichen Itza","Uxmal","Tulum","Copan","Coba","El Mirador","Calakmul",
