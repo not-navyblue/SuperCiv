@@ -12,7 +12,7 @@ It is currently incomplete, however.<br>
 
 ### Incompatible Mods
 - All base ruleset mods, like RekMOD or Unciv WWII
-- [*IDlm0nI's NetworkSpeedMulti*](https://github.com/ID1m0nI/NetworkSpeedMulti): Reverts tile improvement buffs
+- [*ID1m0nI's NetworkSpeedMulti*](https://github.com/ID1m0nI/NetworkSpeedMulti): Reverts tile improvement buffs
 - [*not-navyblue's UnHax v1.14 - v1.15*](https://github.com/not-navyblue/UnHax): Reverts Khan's upgrades; note that any other versions outside the range are compatible
 
 ## Overview
