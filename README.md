@@ -1,7 +1,7 @@
 # SuperCiv
 A base ruleset mod that buffs *everything* in vanilla Unciv, brings in some new additions to the mix, and everything in between. 
 It is currently incomplete, however.<br>
-**Current Version: Beta v0.3**<br>
+**Current Version: Beta v0.3a**<br>
 
 <br>Any mods that are not mentioned in the following lists are assumed to be compatible with SuperCiv without changes.
 ### Mods with Additional Content

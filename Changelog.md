@@ -1,4 +1,9 @@
 # SuperCiv Changelog
+## Beta v0.3a (December 3, 2021 Update)
+*oops*
+### Bugfixes
+- Fixed a bug where Adaptive Warfare's era-based Strength bonus does not work
+
 ## Beta v0.3 (December 3, 2021 Update)
 *Soft Release 3*
 ### Major Changes
