@@ -1,4 +1,46 @@
 # SuperCiv Changelog
+## Beta v0.4 (December 9, 2021 Update)
+*Soft Release 4*
+### Major Changes
+- Added new unit promotions
+- Added a new Orange Star unique replacement for Palace
+- Added a new Indian unique replacement for Manhattan Project :trollface:
+- Added the Breeder Reactor Plant
+- Added and buffed the Recycling Center
+- Added a new difficulty harder than Deity (ported and modified from DeityPlus Difficulty)
+- Added new ruins bonuses for the above difficulty
+- Split the Viking Longship unit for Denmark and Sweden
+- Buffed the unique replacements of all G&K civs
+- Buffed the following nations' unique abilities:
+  * Austria
+  * Carthage
+  * Celts
+  * Egypt
+  * Spain
+  * Sweden 
+- City-States can now spawn with additional units
+- Updated TileResources.json
+### Minor Changes
+- Existing hard difficulties now make City-States spawn with additional units
+- Added some links to the Civilopedia entries of certain unit promotions
+- Adjusted the Phalanx Formation promotion due to its previous unique revealed to be non-functional in promotions
+- Adjusted the Farmer specialist
+- Buffed the Engineer specialist
+- Buffed the Pearl of the Orient promotions (yes, plural)
+- Buffed the following units: 
+  * Cossack
+  * Hussar
+  * War Elephant
+  * Naresuan's Elephant
+- Buffed the Hacienda
+- Buffed the Utopia Project
+- Nerfed the Farmer specialist
+### Bugfixes
+- Fixed the following nations' unique ability descriptions:
+  * Austria
+  * Ethiopia
+  * Sweden
+
 ## Beta v0.3a (December 3, 2021 Update)
 *oops*
 ### Bugfixes

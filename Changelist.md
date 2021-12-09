@@ -10,6 +10,7 @@ All of the changes from vanilla Unciv and new content are listed here.<br>
     - Existing Buildings
 	  * [Recycling Center](#recycling-center)
 	- New Buildings
+	  * [Breeder Reactor Plant](#breeder-reactor-plant)
   - [Units](#units)
     - Existing Units
 	- New Units
@@ -24,11 +25,13 @@ All of the changes from vanilla Unciv and new content are listed here.<br>
 	  * [City Raider](#city-raider-i-ii--iii)
 	  * [Mountaineer](#mountaineer)
 	  * [Guerrilla Warfare](#guerrilla-warfare)
+	  * [Cover III](#cover-iii)
 	  - Special Promotions
 	    * [Trump Card](#trump-card)
 		* [Defeatist](#defeatist)
 		* [Cathartic Bloodlust](#cathartic-bloodlust)
 		* [Merciless](#merciless)
+		* [Adaptive Tactics](#adaptive-tactics)
 	  - Unit-Exclusive Promotions
 	    * [Arctic Warfare](#arctic-warfare)
 	    * [Foreign Fighter](#foreign-fighter)
@@ -36,9 +39,11 @@ All of the changes from vanilla Unciv and new content are listed here.<br>
 		* [Great Generals III](#great-generals-iii)
 		* [Quick Study II](#quick-study-ii)
 		* [Adaptive Warfare](#adaptive-warfare)
+		* [Elephant Rider](#elephant-rider)
 	  - Civilization-Exclusive Promotions
 	    * [Pearl of the Orient](#pearl-of-the-orient)
 		* [Final Singularity](#final-singularity)
+		* [Supernova Fury](#supernova-fury)
   - [Specialists](#specialists)
     - Existing Specialists
 	  * [Scientist](#scientist)
@@ -73,17 +78,17 @@ All of the changes from vanilla Unciv and new content are listed here.<br>
   * [Rome](#rome)
   * [Russia](#russia)
   * [Siam](#siam)
-  * [Spain](#spain)
   * [Songhai](#songhai)
+  * [Spain](#spain)
 - [Gods & Kings Civilizations](#gods--kings-civilizations)
   * [Austria](#austria)
   * [Byzantium](#byzantium)
   * [Carthage](#carthage)
   * [Celts](#celts)
   * [Ethiopia](#ethiopia)
-  * [The Huns](#the-huns)
-  * [The Maya](#the-maya)
-  * [The Netherlands](#the-netherlands)
+  * [The **H**uns](#the-huns)
+  * [The **M**aya](#the-maya)
+  * [The **N**etherlands](#the-netherlands)
   * [Sweden](#sweden)
 - <s>Brave New World Civilizations</s>
 - [Mods with Additional Content](#mods-with-additional-content)
@@ -91,12 +96,24 @@ All of the changes from vanilla Unciv and new content are listed here.<br>
   * [Wars Mod](#wars-mod)
   * [Shared](#shared)
 
+
 ## Gameplay Elements
 ### Buildings
+**Existing Buildings**<br>
 #### Recycling Center
-- [+] Provides **3** Aluminum (G&K: 2)
+- [=] Unlocked with Ecology
+- [+] Provides **4** Aluminum (G&K: 2)
 - [+] Limited to **7** per Civilization (G&K: 5)
 - [+] Maintenance: 2 in SuperCiv vs. 3 in G&K
+
+<br>**New Buildings**<br>
+#### Breeder Reactor Plant
+- [++] Unlocked with Nuclear Fusion
+- Provides 4 Uranium
+- Limited to 7 per Civilization
+- Requires Nuclear Plant
+- Maintenance: 2
+
 
 ### Units
 #### Mechanized Gunner
@@ -112,6 +129,7 @@ All of the changes from vanilla Unciv and new content are listed here.<br>
 - Civilian Great Person unit
 - Can start an 8-turn golden age
 - Can construct Hacienda
+
 
 ### Unit Promotions
 **Existing Promotions**
@@ -154,13 +172,21 @@ All of the changes from vanilla Unciv and new content are listed here.<br>
 - Requires Shock III or Drill III
 - Available for Sword and Gunpowder units
 
+#### Cover III
+- [++] +34% Strength when defending vs Ranged units
+- [++] +25% Strength when defending vs Air units
+- Requires Cover II
+- Available for Sword, Gunpowder, Archery, Ranged Gunpowder, and Siege units
+
 <br>**Special Promotions**<br>
 *These are unit promotions that give large bonuses to units, but have drawbacks and are mutually exclusive with other special promotions.*
 #### Trump Card
 - Special unit promotion
 - [++] +75% Strength when below 30 HP
 - [++] -10% Strength when above 90 HP
-- Requires Shock III, Drill III, Accuracy III, or Barrage III
+- Requires the following promotions: 
+    * Shock III or Drill III
+	* Accuracy III or Barrage III
 - Incompatible with other special promotions
 - Available for most land Military units except Scouts
 
@@ -168,7 +194,9 @@ All of the changes from vanilla Unciv and new content are listed here.<br>
 - Special unit promotion
 - [++] +50% Strength when above 50 HP
 - [++] -10% Strength and +4 Movement when below 30 HP
-- Requires Shock III, Drill III, Accuracy III, or Barrage III
+- Requires the following promotions: 
+    * Shock III or Drill III
+	* Accuracy III or Barrage III
 - Incompatible with other special promotions
 - Available for most land Military units except Scouts
 
@@ -177,7 +205,9 @@ All of the changes from vanilla Unciv and new content are listed here.<br>
 - [++] Fully heals if it kills an enemy unit
 - [++] +10% Strength when below 50 HP
 - [++] -10% Strength when above 50 HP
-- Requires Shock III, Drill III, Accuracy III, or Barrage III
+- Requires the following promotions: 
+    * Shock III or Drill III
+	* Accuracy III or Barrage III
 - Incompatible with other special promotions
 - Available for most land Military units except Scouts
 
@@ -185,17 +215,36 @@ All of the changes from vanilla Unciv and new content are listed here.<br>
 - Special unit promotion
 - [++] +80% Strength when above 50 HP while attacking Wounded units
 - [++] -20% Strength when below 20 HP
-- Requires Shock III, Drill III, Accuracy III, or Barrage III
+- Requires the following promotions: 
+    * Shock III or Drill III
+	* Accuracy III or Barrage III
 - Incompatible with other special promotions
 - Available for most land Military units except Scouts
+
+#### Adaptive Tactics
+- Special unit promotion
+- Comes in two exclusive variants: Offense & Defense
+- [++] Attacking Strength bonuses slowly increase with the civilization's current era
+- [++] -20% Defending Strength before the Industrial era
+- [++] -10% Defending Strength from Industrial era onwards
+- Requires the following promotions: 
+    * Shock III or Drill III
+	* Accuracy III or Barrage III
+	* Bombardment III or Targeting III
+	* Boarding Party III or Coastal Raider III
+- Incompatible with Adaptive Warfare and other special promotions
+- Available for most land and naval Military units except Scouts
 
 <br>**Unit-Exclusive Promotions**<br>
 *These are unit promotions that are only available for certain units.*
 #### Arctic Warfare
 - [++] +25% Strength when fighting in Hills, Tundra, and Snow
 - [++] Double movement in Hills, Tundra, and Snow
-- Only available for [Norwegian Ski Infantry](#unique-unit-2-norwegian-ski-infantry) and [Cossack](#unique-unit-cossack)
-
+- Only available for the following units:
+  * [Norwegian Ski Infantry](#unique-unit-2-norwegian-ski-infantry)
+  * [Cossack](#unique-unit-cossack)
+  * [Carolean](#unique-unit-2-carolean)
+  
 #### Foreign Fighter
 - [++] +20% Strength when fighting in Foreign Land
 - Only available for [Foreign Legion](#unique-unit-2-foreign-legion)
@@ -206,15 +255,25 @@ All of the changes from vanilla Unciv and new content are listed here.<br>
 
 #### Great Generals III
 - [++] Great General is earned 150% faster
-- Only available for [Samurai](#unique-unit-1-samurai) and [Legion](#unique-unit-2-legion)
+- Only available for the following units:
+  * [Samurai](#unique-unit-1-samurai)
+  * [Legion](#unique-unit-2-legion)
 
 #### Quick Study II
 - [++] 100% increased XP gain
 - Only available for [Keshik](#unique-unit-1-keshik)
 
 #### Adaptive Warfare
-- [++] Strength bonuses scale with the basic melee unit of that era
+- [++] Strength bonuses scale with the civilization's current era
+- Incompatible with both variants of Adaptive Tactics
 - Only available for [Khan](#unique-unit-2-khan)
+
+#### Elephant Rider
+- [++] -10% Strength towards adjacent enemy Military units
+- Only available for the following units:
+  * [War Elephant](#unique-unit-1-war-elephant)
+  * [Naresuan's Elephant](#unique-unit-naresuan-s-elephant)
+  * [African Forest Elephant](#unique-unit-2-african-forest-elephant)
 
 <br>**Civilization-Exclusive Promotions**<br>
 *These are unit promotions that are only available for units originating from a certain civilization.*
@@ -229,6 +288,13 @@ All of the changes from vanilla Unciv and new content are listed here.<br>
 - [++] +100% Strength when below 20 HP
 - [++] -20% Strength for adjacent enemy Military units
 - Only available via [TON 618](#unique-national-wonder-ton-618)
+
+#### Supernova Fury
+- [++] +90% Strength when attacking with below 30 HP
+- [++] +60% Strength when defending
+- [++] Heals 50 damage if it kills a unit
+- Only available via [Betelgeuse](#unique-national-wonder-betelgeuse)
+
 
 ### Specialists
 #### Scientist
@@ -304,7 +370,7 @@ All of the changes from vanilla Unciv and new content are listed here.<br>
 
 ### Aztecs
 #### Unique Ability: Sacrificial Captives
-- [+]\* **150%** (vanilla: 100%) of killed Military unit's Strength is earned as Culture and **Faith** (Faith is not earned in vanilla)
+- [+] **150%** (vanilla: 100%) of killed Military unit's Strength is earned as [++] Culture and **Faith**
 - [++] +30% Strength vs wounded units for all units
 
 #### Unique Building: Floating Gardens
@@ -395,6 +461,7 @@ All of the changes from vanilla Unciv and new content are listed here.<br>
 #### Unique Ability: Monument Builders
 - [+] **30%** Production increase when constructing wonders (vanilla: 20%)
 - [++] +3 Culture from every wonder
+- [++] +5 Production and +5 Culture before the Medieval era
 
 #### Unique Building: Burial Tomb
 - [=] Replaces Temple
@@ -492,7 +559,7 @@ All of the changes from vanilla Unciv and new content are listed here.<br>
 #### Unique Unit 2: Companion Cavalry
 - [=] Replaces Horseman
 - [++] Cost: 60 in SuperCiv vs. 75 in vanilla & base unit
-- [++] Loses the ability to have no defensive terrain bonuses
+- [++] Loses the inability to gain defensive terrain bonuses
 - [++] Gains the ability to move immediately once bought
 
 ### Inca
@@ -533,6 +600,13 @@ All of the changes from vanilla Unciv and new content are listed here.<br>
 - [=] Culture: 2 in SuperCiv & vanilla vs. 0 in base unit
 - [+] **+2 Gold and +2 Culture** after discovering Flight (vanilla: +1 Culture)
 
+#### Unique National Wonder: Mahatma Project
+- [++] Replaces Manhattan Project
+- Cost: 600 vs 750
+- Enables nuclear weapon
+- Free Atomic Bomb appears
+- Triggers a global alert upon completion
+
 #### Unique Unit 1: War Elephant
 - [=] Replaces Chariot Archer
 - [=] Does not require Horses
@@ -541,7 +615,7 @@ All of the changes from vanilla Unciv and new content are listed here.<br>
 - [=] Ranged Strength: 11 in SuperCiv & vanilla vs. 10 in base unit
 - [+] Movement: 4 in SuperCiv & base unit vs. 3 in vanilla
 - [=] Loses the rough terrain penalty
-- [++] Gains the Barrage I promotion
+- [++]\* Gains the Barrage I and [Elephant Rider](#elephant-rider) promotions
 
 #### Unique Unit 2: Gandhi's Wrath
 - [++] Replaces Nuclear Missile
@@ -637,14 +711,14 @@ All of the changes from vanilla Unciv and new content are listed here.<br>
 - [++] +25% Strength for naval units
 - [++] Naval melee units gain the Boarding Party I promotion
 
-### Unique Unit 1: Janissary
+#### Unique Unit 1: Janissary
 - [=] Replaces Musketman
 - [++] Melee Strength: 26 in SuperCiv vs. 24 in vanilla & base unit
 - [=] Heals 50 damage if it kills a unit
 - [=] +25% Strength when attacking
 - [++]\* Gains the Shock I and March promotions
 
-### Unique Unit 2: Sipahi
+#### Unique Unit 2: Sipahi
 - [=] Replaces Lancer
 - [++] Melee Strength: 28 in SuperCiv vs. 25 in vanilla & base unit
 - [++] Movement: 6 in SuperCiv vs. 5 in vanilla vs. 4 in base unit
@@ -743,8 +817,9 @@ All of the changes from vanilla Unciv and new content are listed here.<br>
 #### Unique Unit: Cossack
 - [=] Replaces Cavalry
 - [++] Cost: 200 in SuperCiv vs. 225 in vanilla & base unit
+- [++] Melee Strength: 37 in SuperCiv vs. 34 in vanilla & base unit
 - [=] +50% Strength vs. Wounded units
-- [++]\* Gains the Arctic Warfare and Merciless promotions
+- [++]\* Gains the [Arctic Warfare](#arctic-warfare) and Merciless promotions
 
 ### Siam
 #### Unique Ability: Father Governs Children
@@ -766,14 +841,35 @@ All of the changes from vanilla Unciv and new content are listed here.<br>
 - [=] Melee Strength: 25 in SuperCiv & vanilla vs. 20 in base unit
 - [+] Movement: 4 in SuperCiv & base unit vs. 3 in vanilla
 - [=] +50% Strength vs. Mounted units
-- [++] Gains the Charge Promotion
+- [++]\* Gains the Charge and [Elephant Rider](#elephant-rider) promotions
+
+### Songhai
+#### Unique Ability: River Warlord
+- [=] Receive triple Gold from Barbarian encampments and pillaging cities
+- [=] Embarked units can defend themselves
+- [++] Land Melee units gain the City Raider I promotion
+- [++] Melee Water units gain the Coastal Raider I promotion
+
+#### Unique Building: Mud Pyramid Mosque
+- [=] Replaces Temple
+- [++] Cost: 80 in SuperCiv vs. 100 in vanilla & base building
+- [+] Culture: 3 in SuperCiv vs. 2 in vanilla vs. 0 in base building
+- [++] City Health: 20 in SuperCiv vs. 0 in vanilla & base building
+- [=] Maintenance: 0 in SuperCiv & vanilla vs. 2 in base building
+
+#### Unique Unit: Mandekalu Cavalry
+- [=] Replaces Knight
+- [=] Cost: 110 in SuperCiv & vanilla vs. 120 in base unit
+- [++] Melee Strength: 26 in SuperCiv vs. 20 in vanilla & base unit
+- [=] Loses the Strength penalty vs cities
+- [++]\* Gains the City Raider I and Trump Card promotions
 
 ### Spain
 #### Unique Ability: Seven Cities of Gold
 - [=] 100 Gold for discovering a Natural Wonder (multiplied by 5 if first to discover)
 - [=] Natural Wonders provide doubled Happiness and doubled tile yields
-- [++] +20% Strength if within 7 tiles of any Natural Wonder
-- [++] Scouts gain the Scouting III promotion
+- [++] +20% Strength if within 10 tiles of any Natural Wonder
+- [++]\*\*\* Scouts gain the Scouting III, March, Sentry, and Mobility promotions
 
 #### Unique Unit 1: Conquistador
 - [=] Replaces Knight
@@ -792,27 +888,6 @@ All of the changes from vanilla Unciv and new content are listed here.<br>
 - [=] +50% Strength vs. Mounted units
 - [++] Gains the Formation II promotion
 
-### Songhai
-#### Unique Ability: River Warlord
-- [=] Receive triple Gold from Barbarian encampments and pillaging cities
-- [=] Embarked units can defend themselves
-- [++]\* Land Melee units gain the City Raider I promotion
-- [++] Melee Water units gain the Coastal Raider I promotion
-
-#### Unique Building: Mud Pyramid Mosque
-- [=] Replaces Temple
-- [++] Cost: 80 in SuperCiv vs. 100 in vanilla & base building
-- [+] Culture: 3 in SuperCiv vs. 2 in vanilla vs. 0 in base building
-- [++] City Health: 20 in SuperCiv vs. 0 in vanilla & base building
-- [=] Maintenance: 0 in SuperCiv & vanilla vs. 2 in base building
-
-#### Unique Unit: Mandekalu Cavalry
-- [=] Replaces Knight
-- [=] Cost: 110 in SuperCiv & vanilla vs. 120 in base unit
-- [++] Melee Strength: 26 in SuperCiv vs. 20 in vanilla & base unit
-- [=] Loses the Strength penalty vs cities
-- [++]\* Gains the City Raider I and Trump Card promotions
-
 
 ## Gods & Kings Civilizations
 ### Austria
@@ -821,6 +896,23 @@ All of the changes from vanilla Unciv and new content are listed here.<br>
 - [+] Can spend Gold to annex or puppet a City-State that has been your ally for **3 turns** (vanilla: 5 turns)
 - [++] When declaring friendship, both parties gain a 10% boost to great person generation
 - [++] +3 Production, +3 Science and +3 Culture in all cities when not at war
+- [++] +20% Strength when defending for Military units when at war
+
+#### Unique Building: Coffee House
+- [=] Replaces Windmill
+- [++] Production: 3 in SuperCiv vs. 2 in G&K & base building
+- [++] Maintenance: 1 in SuperCiv vs. 2 in G&K & base building
+- [=] +10% Production bonus in SuperCiv & G&K
+- [=] +25% Great Person generation in this city
+- [++] +1 Gold per population in this city
+
+#### Unique Unit: Hussar
+- [=] Replaces Cavalry
+- [++] Melee Strength: 26 in SuperCiv vs. 24 in G&K & base unit
+- [=] Movement: 5 in SuperCiv & G&K vs. 4 in base unit
+- [+] +2 Sight in SuperCiv vs. +1 Sight in vanilla
+- [=] +50% to Flank Attack bonuses
+- [++]\* Gains the Charge and Formation I promotions
 
 ### Byzantium
 #### Unique Ability: Patriarchate of Constantinople
@@ -828,23 +920,82 @@ All of the changes from vanilla Unciv and new content are listed here.<br>
 - [++] Receive a free Great Prophet upon discovering the Theology technology
 - [++] +5 Culture and +5 Faith in holy cities
 
+#### Unique Unit 1: Dromon
+- [=] Replaces Trireme
+- [+] Cost: 40 in SuperCiv vs. 56 in G&K vs. 45 in base unit
+- [+] Melee Strength: 13 in SuperCiv vs. 8 in G&K vs. 10 in base unit
+- [+] Ranged Strength: 19 in SuperCiv vs. 10 in G&K vs. 0 in base unit
+- [=] +50% Strength vs. naval units
+- [++] Gains the Mobility promotion
+
+#### Unique Unit 2: Cataphract
+- [=] Replaces Horseman
+- [=] Melee Strength: 15 in SuperCiv & G&K vs. 12 in base unit
+- [+] Movement: 5 in SuperCiv vs. 3 in G&K vs. 4 in base unit
+- [=] Loses the inability to gain defensive terrain bonuses
+- [+] Loses the Strength penalty vs cities
+- [++]\* Gains the Mobility and Charge promotions
+
 ### Carthage
 #### Unique Ability: Phoenician Heritage
 - [++] All coastal cities gain a free Harbor and **Lighthouse**
 - [=] Land units may cross Mountain tiles after the first Great General is earned, but will take 50 damage when ending their turn on one
-- [++] +3 Production from every Mountains
+- [++]\*\* +3 Production from every Mountains, Coast, and Ocean
+
+#### Unique Unit 1: Quinquereme
+- [=] Replaces Trireme
+- [+] Melee Strength: 14 in SuperCiv vs. 13 in G&K vs. 10 in base unit
+- [++] Can move immediately once bought
+- [++] Loses the inability to enter ocean tiles
+- [++] Gains the Supply promotion
+
+#### Unique Unit 2: African Forest Elephant
+- [=] Replaces Horseman
+- [+] Cost: 60 in SuperCiv vs. 100 in G&K vs. 75 in base unit
+- [+] Melee Strength: 17 in SuperCiv vs. 14 in G&K vs. 12 in base unit
+- [=] Movement: 3 in SuperCiv & G&K vs. 4 in base unit
+- [=] Debuffs towards adjacent enemy Military units consolidated into a unit promotion^
+- [++]\* Gains the Sentry, Woodsman, and ^[Elephant Rider](#elephant-rider) promotions
 
 ### Celts
 #### Unique Ability: Druidic Lore
 - [+] +1 Faith and **+2 Production** in all cities with neighboring 1 to 2 unimproved Forest tiles (Production is not provided in vanilla)
 - [+] +2 Faith and **+1 Production** in all cities with neighboring 3 to 6 unimproved Forest tiles (see above)
 - [++] +3 Production in all cities with neighboring 1 to 6 improved Forest tiles
+- [++] Land units gain the Woodsman promotion
+
+#### Unique Building: Ceilidh Hall
+- [=] Replaces Opera House
+- [++] Culture: 6 in SuperCiv vs. 4 in G&K & base building
+- [+] Faith: 4 in SuperCiv vs. 3 in G&K vs. 0 in base building
+- [++] Maintenance: 1 in SuperCiv vs. 2 in G&K & base building
+
+#### Unique Unit: Pictish Warrior
+- [=] Replaces Spearman
+- [++] Cost: 40 in SuperCiv vs. 56 in G&K & base unit
+- [++] Melee Strength: 17 in SuperCiv vs. 11 in G&K & base unit
+- [=] Earn 50% of killed Military unit's Strength as Faith
+- [=] Loses the Strength bonus vs Mounted units
+- [++]\* Gains the **Drill II & III** and Pictish Courage promotions
 
 ### Ethiopia
 #### Unique Ability: Spirit of Adwa
 - [=] +20% Strength when fighting units from a Civilization with more cities than Ethiopia
 - [++] +3 Culture and +2 Production in all cities when at war
 - [++] +5 Culture in all cities when not at war
+
+#### Unique Unit: Stele
+- [=] Replaces Monument
+- [++] Cost: 30 in SuperCiv vs. 40 in G&K & base unit
+- [++] Culture: 3 in SuperCiv vs. 2 in G&K & base unit
+- [+] Faith: 3 in SuperCiv vs. 2 in G&K vs. 0 in base unit
+- [++] Maintenance: 0 in SuperCiv vs. 1 in G&K & base unit
+
+#### Unique Unit: Mehal Safari
+- [=] Replaces Rifleman
+- [=] Cost: 200 in G&K vs. 225 in base unit
+- [++] Melee Strength: 38 in SuperCiv vs. 34 in G&K & base unit
+- [++]\* Gains the Drill I, **II & III** and Home Sweet Home promotions
 
 ### The Huns
 #### Unique Ability: Scourge of God
@@ -855,11 +1006,44 @@ All of the changes from vanilla Unciv and new content are listed here.<br>
 - [++]\* Sword and Gunpowder units gain the Besiege promotion
 - [++] Siege units gain the Volley promotion
 
+#### Unique Unit 1: Horse Archer
+- [=] Replaces Chariot Archer
+- [=] Does not require Horses
+- [+]\* Melee Strength: 9 in SuperCiv vs. 7 in G&K vs. 6 in base unit
+- [++] Ranged Strength: 13 in SuperCiv vs. 10 in G&K & base unit
+- [=] Loses the rough terrain penalty
+- [++]\*\* Gains the Accuracy I & **II** and **Volley** promotions
+
+#### Unique Unit 2: Battering Ram
+- [=] Replaces Spearman
+- [+] Cost: 50 in SuperCiv vs. 75 in G&K vs. 56 in base unit
+- [+] Strength: 15 in SuperCiv vs. 10 in G&K vs. 11 in base unit
+- [=] +300% Strength vs cities when attacking
+- [=] No defensive terrain bonus
+- [+] -15% Strength when defending in SuperCiv vs. -33% Strength when defending in G&K
+- [++] Loses the limited visibility penalty (from G&K)
+- [=] Can only attack cities
+- [=] Loses the Strength bonus against Mounted units
+- [++]\*\* Gains the Cover I, **II & III** promotions
+
 ### The Maya
 #### Unique Ability: The Long Count
 - [=] The Mayan Long Count game mechanic
 - [++] +1 Science in all cities, increasing by 1 for each passing era up to Information era
 - [++] Gain a free Observatory in all cities
+
+#### Unique Building: Pyramid
+- [=] Replaces Shrine
+- [++] Cost: 30 in SuperCiv vs. 40 in G&K & base building
+- [+] Science: 3 in SuperCiv vs. 2 in G&K vs. 0 in base building
+- [+] Faith: 3 in SuperCiv vs. 2 in G&K vs. 1 in base building
+
+#### Unique Unit: Atlatlist
+- [=] Replaces Archer
+- [+] Cost: 30 in SuperCiv vs. 36 in G&K vs. 40 in base unit
+- [++] Melee Strength: 6 in SuperCiv vs. 5 in G&K & base unit
+- [++] Ranged Strength: 9 in SuperCiv vs. 7 in G&K & base unit
+- [++]\* Gains the Woodsman and Barrage II promotions
 
 ### The Netherlands
 #### Unique Ability: Dutch East India Company
@@ -867,11 +1051,47 @@ All of the changes from vanilla Unciv and new content are listed here.<br>
 - [++] +2 Gold and +2 Happiness from every luxury resource
 - [++] +3 Gold from each Trade Route
 
+#### Unique Unit: Sea Beggar
+- [=] Replaces Privateer
+- [++] Cost: 120 in SuperCiv vs. 150 in G&K & base unit
+- [++] Melee Strength: 30 in SuperCiv vs. 25 in G&K & base unit
+- [++] Earn 100% of killed Military unit's Strength as Gold
+- [++] Gains the Coastal Raider I, II & **III** and Supply promotions
+
+#### Unique Improvement: Polder
+- [=] Unlocked with Guilds
+- [=] Can be built on Marsh or Flood plains
+- [+] Turns to build: 5 in SuperCiv vs. 7 in G&K
+- [+] Food: 4 in SuperCiv vs. 3 in G&K
+- [+] **+2 Production** and +2 Gold after discovering Economics (G&K: +1 Production)
+
 ### Sweden
 #### Unique Ability: Nobel Prize
 - [+] Gain **120** Influence with a Great Person gift to a City-State (vanilla: 90)
 - [+] When declaring friendship, both parties gain a **40%** boost to great person generation (vanilla: 10%)
 - [++] +5 Production and +5 Gold from every Workshop
+- [++] +1 Science and +1 Culture from every Tundra
+
+#### Unique Unit 1: Hakkapeliita
+- [=] Replaces Lancer
+- [++] Cost: 150 in SuperCiv vs. 185 in G&K & base unit
+- [++] Melee Strength: 29 in SuperCiv vs. 25 in G&K & base unit
+- [++] Movement: 5 in SuperCiv vs. 4 in G&K & base unit
+- [=] Transfers Movement to Great General
+- [=] +15% Strength when stacked with Great General
+- [++]\* Gains the Formation I, **Mobility** and **March** promotions
+
+#### Unique Unit 2: Carolean
+- [=] Replaces Rifleman
+- [++] Cost: 200 in SuperCiv vs. 225 in G&K & base unit
+- [++] Melee Strength: 38 in SuperCiv vs. 34 in G&K & base unit
+- [++]\* Gains the March, **Sentry** and **Arctic Warfare** promotions
+
+#### Unique Unit 3: Viking Longship
+- [++] Replaces Trireme
+- Melee Strength: 18 vs 10
+- Movement: 5 vs 4
+- Gains the Boarding Party I and Coastal Raider I & II promotions
 
 
 ## Brave New World Civilizations
@@ -888,7 +1108,7 @@ All of the changes from vanilla Unciv and new content are listed here.<br>
 - All non-air Military units in all cities gain the Foreign Fighter and Phalanx Formation promotions
 - Can only be built in capital
 - Destroyed when city is captured
-- Unbuildable and Unsellable
+- Unbuildable and unsellable
 
 ### Wars Mod
 #### Unique National Wonder: TON 618
@@ -901,6 +1121,16 @@ All of the changes from vanilla Unciv and new content are listed here.<br>
 - City Health: 10 vs. 0
 - Indicates the capital city
 - Military units gain the [Final Singularity](#final-singularity) promotion
+
+#### Unique National Wonder: Betelgeuse
+- [++] Replaces Palace
+- Unique to Orange Star
+- Production: 4 vs. 3
+- Science & Gold: 5 vs. 3
+- Culture: 2 vs. 1
+- City Strength: 3 vs. 2
+- Indicates the capital city
+- Military units gain the [Supernova Fury](#supernova-fury) and Great Generals III promotions
 
 ### Shared
 #### Unique National Wonder: Malacanang Palace
