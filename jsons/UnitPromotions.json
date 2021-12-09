@@ -47,7 +47,13 @@
 		"name": "Volley",
 		"prerequisites": ["Accuracy I","Barrage I"],
 		"uniques": ["[+50]% Strength <vs cities>"],
-		"unitTypes": ["Archery","Ranged Gunpowder","Siege"]
+		"unitTypes": ["Archery","Ranged Gunpowder","Siege"],
+		"civilopediaText": [
+			{
+				"text": "Granted by The Huns's ability",
+				"link": "Nations/The Huns"
+			}
+		]
 	},
 	{
 		"name": "Extended Range",
@@ -102,7 +108,13 @@
 		"name": "City Raider I",
 		"prerequisites": ["Shock I", "Drill I"],
 		"uniques": ["[+15]% Strength <vs cities>", "Earn [33]% of the damage done to [City] units as [Gold]"],
-		"unitTypes": ["Sword","Gunpowder","Mounted","Armored"]
+		"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
+		"civilopediaText": [
+			{
+				"text": "Granted by Songhai's ability",
+				"link": "Nations/Songhai"
+			}
+		]
 	},
 	{
 		"name": "City Raider II",
@@ -127,7 +139,13 @@
 		"name": "Besiege", // Not called "Siege" in order to not conflict with siege type units for translations
 		"prerequisites": ["Shock II","Drill II"],
 		"uniques": ["[+50]% Strength <vs cities>"],
-		"unitTypes": ["Sword","Gunpowder"]
+		"unitTypes": ["Sword","Gunpowder"],
+		"civilopediaText": [
+			{
+				"text": "Granted by The Huns's ability",
+				"link": "Nations/The Huns"
+			}
+		]
 	},
 	{
 		"name": "Formation I",
@@ -146,13 +164,29 @@
 		"name": "Blitz",
 		"prerequisites": ["Shock III","Drill III"],
 		"uniques": ["[1] additional attacks per turn", "[+1] Movement"],
-		"unitTypes": ["Sword","Gunpowder","Mounted","Armored"]
+		"unitTypes": ["Sword","Gunpowder","Mounted","Armored"],
+		"civilopediaText": [
+			{
+				"text": "Granted by France's ability",
+				"link": "Nations/France"
+			}
+		]
 	},
 	{
 		"name": "Woodsman",
 		"prerequisites": ["Shock III","Drill III"],
 		"uniques": ["Double movement in [Forest]","Double movement in [Jungle]"],
-		"unitTypes": ["Sword","Gunpowder"]
+		"unitTypes": ["Sword","Gunpowder"],
+		"civilopediaText": [
+			{
+				"text": "Granted by Iroquois's ability",
+				"link": "Nations/Iroquois"
+			},
+			{
+				"text": "Granted by Celts's ability",
+				"link": "Nations/Celts"
+			}
+		]
 	},
 	{
 		"name": "Guerrilla Warfare",
@@ -198,7 +232,13 @@
 		"name": "Scouting III",
 		"prerequisites": ["Scouting II"],
 		"uniques": ["[+1] Sight", "[+1] Movement"],
-		"unitTypes": ["Scout"]
+		"unitTypes": ["Scout"],
+		"civilopediaText": [
+			{
+				"text": "Granted by Spain's ability",
+				"link": "Nations/Spain"
+			}
+		]
 	},
 	{
 		"name": "Survivalism I",
@@ -223,7 +263,13 @@
 	{
 		"name": "Boarding Party I",
 		"uniques": ["[+15]% Strength <vs [Water] units>"],
-		"unitTypes": ["Melee Water"]
+		"unitTypes": ["Melee Water"],
+		"civilopediaText": [
+			{
+				"text": "Granted by The Ottomans's ability",
+				"link": "Nations/The Ottomans"
+			}
+		]
 	},
 	{
 		"name": "Boarding Party II",
@@ -241,7 +287,17 @@
 	{
 		"name": "Coastal Raider I",
 		"uniques": ["[+20]% Strength <vs cities>", "Earn [33]% of the damage done to [City] units as [Gold]"],
-		"unitTypes": ["Melee Water"]
+		"unitTypes": ["Melee Water"],
+		"civilopediaText": [
+			{
+				"text": "Granted by Denmark's ability",
+				"link": "Nations/Denmark"
+			},
+			{
+				"text": "Granted by Songhai's ability",
+				"link": "Nations/Songhai"
+			}
+		]
 	},
 	{
 		"name": "Coastal Raider II",
@@ -470,33 +526,66 @@
 		"uniques": ["[+33]% Strength <vs [Ranged] units> <when defending>"],
 		"unitTypes": ["Sword","Gunpowder","Archery","Ranged Gunpowder","Siege"]
 	},
+	{
+		"name": "Cover III",
+		"prerequisites": ["Cover II"],
+		"uniques": [
+			"[+34]% Strength <vs [Ranged] units> <when defending>",
+			"[+25]% Strength <vs [Air] units> <when defending>"
+		],
+		"unitTypes": ["Sword","Gunpowder","Archery","Ranged Gunpowder","Siege"]
+	},
 
 	{
 		"name": "March",
 		"prerequisites": ["Accuracy II","Barrage II","Shock III","Drill III"],
 		"uniques": ["Unit will heal every turn, even if it performs an action", "[+1] Movement"],
-		"unitTypes": ["Sword","Gunpowder","Archery","Ranged Gunpowder","Siege","Mounted"]
+		"unitTypes": ["Sword","Gunpowder","Archery","Ranged Gunpowder","Siege","Mounted"],
+		"civilopediaText": [
+			{
+				"text": "Granted by Spain's ability",
+				"link": "Nations/Spain"
+			}
+		]
 	},
 	{
 		"name": "Mobility",
 		"prerequisites": ["Shock II","Drill II","Targeting I",
 			"Bombardment I","Boarding Party I", "Coastal Raider I", "Wolfpack I"],
 		"uniques": ["[+1] Movement"],
-		"unitTypes": ["Mounted","Melee Water","Ranged Water","Armored","Submarine"]
+		"unitTypes": ["Mounted","Melee Water","Ranged Water","Armored","Submarine"],
+		"civilopediaText": [
+			{
+				"text": "Granted by Spain's ability",
+				"link": "Nations/Spain"
+			}
+		]
 	},
 	
 	{
 		"name": "Mountaineer",
 		"prerequisites": ["Blitz", "March", "Scouting III"],
 		"uniques": ["Double movement in [Hill]", "Double movement in [Mountain]", "Can pass through impassable tiles"],
-		"unitTypes": ["Sword","Gunpowder","Archery","Ranged Gunpowder","Siege","Mounted","Scout","Armored"]
+		"unitTypes": ["Sword","Gunpowder","Archery","Ranged Gunpowder","Siege","Mounted","Scout","Armored"],
+		"civilopediaText": [
+			{
+				"text": "Granted by Inca's ability",
+				"link": "Nations/Inca"
+			}
+		]
 	},
 	
 	{
 		"name": "Sentry",
 		"prerequisites": ["Accuracy I","Barrage I","Shock II","Drill II","Bombardment I","Targeting I","Boarding Party I","Coastal Raider I"],
 		"uniques": ["[+1] Sight"],
-		"unitTypes": ["Sword","Gunpowder","Mounted","Ranged Water","Armored","Melee Water"]
+		"unitTypes": ["Sword","Gunpowder","Mounted","Ranged Water","Armored","Melee Water"],
+		"civilopediaText": [
+			{
+				"text": "Granted by Spain's ability",
+				"link": "Nations/Spain"
+			}
+		]
 	},
 	{
 		"name": "Logistics",
@@ -546,6 +635,8 @@
 			"Incompatible with [Defeatist]",
 			"Incompatible with [Cathartic Bloodlust]",
 			"Incompatible with [Merciless]",
+			"Incompatible with [Adaptive Tactics (Offense)]",
+			"Incompatible with [Adaptive Warfare (Defense)]",
 			"[+75]% Strength <when below [30] HP>",
 			"[-10]% Strength <when above [90] HP>"
 		],
@@ -559,6 +650,8 @@
 			"Incompatible with [Trump Card]",
 			"Incompatible with [Cathartic Bloodlust]",
 			"Incompatible with [Merciless]",
+			"Incompatible with [Adaptive Tactics (Offense)]",
+			"Incompatible with [Adaptive Warfare (Defense)]",
 			"[+50]% Strength <when above [50] HP>",
 			"[+4] Movement <when below [30] HP>",
 			"[-10]% Strength <when below [30] HP>"
@@ -573,6 +666,8 @@
 			"Incompatible with [Trump Card]",
 			"Incompatible with [Defeatist]",
 			"Incompatible with [Merciless]",
+			"Incompatible with [Adaptive Tactics (Offense)]",
+			"Incompatible with [Adaptive Warfare (Defense)]",
 			"Heals [100] damage if it kills a unit",
 			"[+10]% Strength <when below [50] HP>",
 			"[-10]% Strength <when above [50] HP>"
@@ -587,32 +682,141 @@
 			"Incompatible with [Trump Card]",
 			"Incompatible with [Defeatist]",
 			"Incompatible with [Cathartic Bloodlust]",
+			"Incompatible with [Adaptive Tactics (Offense)]",
+			"Incompatible with [Adaptive Warfare (Defense)]",
 			"[+80]% Strength <when attacking> <vs [Wounded] units> <when above [50] HP>",
 			"[-20]% Strength <when below [20] HP>"
 		],
 		"unitTypes": ["Sword", "Gunpowder", "Archery", "Ranged Gunpowder", "Mounted", "Armored", "Siege"]
 	},
+	{
+		"name": "Adaptive Tactics (Offense)",
+		"prerequisites": [
+			"Shock III", 
+			"Drill III", 
+			"Accuracy III", 
+			"Barrage III", 
+			"Bombardment III", 
+			"Targeting III", 
+			"Boarding Party III", 
+			"Coastal Raider III"
+		],
+		"uniques": [
+			"Special unit promotion",
+			"Incompatible with [Trump Card]",
+			"Incompatible with [Defeatist]",
+			"Incompatible with [Cathartic Bloodlust]",
+			"Incompatible with [Merciless]",
+			"Incompatible with [Adaptive Tactics (Defense)]",
+			"[+10]% Strength <when attacking> <during the [Ancient era]>",
+			"[+15]% Strength <when attacking> <during the [Classical era]>",
+			"[+20]% Strength <when attacking> <during the [Medieval era]>",
+			"[+25]% Strength <when attacking> <during the [Renaissance era]>",
+			"[+30]% Strength <when attacking> <during the [Industrial era]>",
+			"[+35]% Strength <when attacking> <during the [Modern era]>",
+			"[+40]% Strength <when attacking> <during the [Atomic era]>",
+			"[+45]% Strength <when attacking> <during the [Information era]>",
+			"[+50]% Strength <when attacking> <during the [Future era]>",
+			"[-20]% Strength <when defending> <before the [Industrial era]>",
+			"[-10]% Strength <when defending> <starting from the [Industrial era]>",
+			"Incompatible with [Adaptive Warfare]"
+		],
+		"unitTypes": [
+			"Sword", 
+			"Gunpowder", 
+			"Archery", 
+			"Ranged Gunpowder", 
+			"Mounted", 
+			"Armored", 
+			"Siege",
+			"Melee Water",
+			"Ranged Water"
+		]
+	},
+	{
+		"name": "Adaptive Tactics (Defense)",
+		"prerequisites": [
+			"Shock III", 
+			"Drill III", 
+			"Accuracy III", 
+			"Barrage III", 
+			"Bombardment III", 
+			"Targeting III", 
+			"Boarding Party III", 
+			"Coastal Raider III"
+		],
+		"uniques": [
+			"Special unit promotion",
+			"Incompatible with [Trump Card]",
+			"Incompatible with [Defeatist]",
+			"Incompatible with [Cathartic Bloodlust]",
+			"Incompatible with [Merciless]",
+			"Incompatible with [Adaptive Tactics (Offense)]",
+			"[+10]% Strength <when defending> <during the [Ancient era]>",
+			"[+15]% Strength <when defending> <during the [Classical era]>",
+			"[+20]% Strength <when defending> <during the [Medieval era]>",
+			"[+25]% Strength <when defending> <during the [Renaissance era]>",
+			"[+30]% Strength <when defending> <during the [Industrial era]>",
+			"[+35]% Strength <when defending> <during the [Modern era]>",
+			"[+40]% Strength <when defending> <during the [Atomic era]>",
+			"[+45]% Strength <when defending> <during the [Information era]>",
+			"[+50]% Strength <when defending> <during the [Future era]>",
+			"[-20]% Strength <when attacking> <before the [Industrial era]>",
+			"[-10]% Strength <when attacking> <starting from the [Industrial era]>",
+			"Incompatible with [Adaptive Warfare]"
+		],
+		"unitTypes": [
+			"Sword", 
+			"Gunpowder", 
+			"Archery", 
+			"Ranged Gunpowder", 
+			"Mounted", 
+			"Armored", 
+			"Siege",
+			"Melee Water",
+			"Ranged Water"
+		]
+	},
+	
 
 	// Uniques that should be kept on upgrades
 	{
 		"name": "Morale", // Heroic Epic and French units
-		"uniques": ["[+15]% Strength"]
+		"uniques": ["[+15]% Strength"],
+		"civilopediaText": [
+			{
+				"text": "Granted by France's ability",
+				"link": "Nations/France"
+			}
+		]
 	},
 	{
 		"name": "Great Generals I", // only for Companion Cavalry, Chu-Ko-Nu and their subsequent upgrades
 		"uniques": ["[Great General] is earned [50]% faster"]
 	},
 	{
-		"name": "Great Generals II", // only for Panzer, Keshik and their subsequent upgrades
+		"name": "Great Generals II", // only for Panzer, Keshik, African Forest Elephant and their subsequent upgrades
 		"uniques": ["[Great General] is earned [100]% faster"]
 	},
 	{
 		"name": "Great Generals III", // only for Samurai, Legion and their subsequent upgrades
-		"uniques": ["[Great General] is earned [150]% faster"]
+		"uniques": ["[Great General] is earned [150]% faster"],
+		"civilopediaText": [
+			{
+				"text": "Granted by Betelgeuse",
+				"link": "Wonders/Betelgeuse"
+			}
+		]
 	},
 	{
 		"name": "Quick Study", // only for French land units, Ballista and their subsequent upgrades
-		"uniques": ["[50]% Bonus XP gain"]
+		"uniques": ["[50]% Bonus XP gain"],
+		"civilopediaText": [
+			{
+				"text": "Granted by France's ability",
+				"link": "Nations/France"
+			}
+		]
 	},
 	{
 		"name": "Quick Study II", // only for Keshik and subsequent upgrades
@@ -620,6 +824,10 @@
 	},
 	{
 		"name": "Haka War Dance", // only for Maori Warrior and subsequent upgrades
+		"uniques": ["[-10]% Strength for enemy [Military] units in adjacent [All] tiles"]
+	},
+	{
+		"name": "Elephant Rider", // only for War Elephant, Naresuan's Elephant, African Forest Elephant and their subsequent upgrades
 		"uniques": ["[-10]% Strength for enemy [Military] units in adjacent [All] tiles"]
 	},
 	{
@@ -662,7 +870,7 @@
 	{
 		"name": "Phalanx Formation", // only for Hoplite and subsequent upgrades
 		"uniques": [
-			"+[15]% Strength for [Military] units which have another [Military] unit in an adjacent tile"
+			"Bonus for units in 2 tile radius 15%"
 		]
 	},
 	{
@@ -676,34 +884,54 @@
 			"[+170]% Strength <during the [Modern era]>",
 			"[+220]% Strength <during the [Atomic era]>",
 			"[+350]% Strength <during the [Information era]>",
-			"[+400]% Strength <during the [Future era]>"
+			"[+400]% Strength <during the [Future era]>",
+			"Incompatible with [Adaptive Tactics (Offense)]",
+			"Incompatible with [Adaptive Tactics (Defense)]",
 		]
 	},
 	{
 		"name": "Pearl of the Orient (Philippines)", // only for Filipino units from Philippines via Malacanang Palace
 		"uniques": [
-			"[+35]% Strength <when defending> <in [Friendly Land] tiles>",
+			"[+35]% Strength <in [Friendly Land] tiles>",
 			"[+25]% Strength <when defending> <in [Foreign Land] tiles>",
 			"[+20]% Strength <for [Lantaka (Philippines)] units>",
 			"[+20]% Strength <for [Katipunero] units>"
+		],
+		"civilopediaText": [
+			{
+				"text": "Granted by Malacanang Palace",
+				"link": "Wonders/Malacanang Palace (Philippines)"
+			}
 		]
 	},
 	{
 		"name": "Pearl of the Orient (Filipinas)", // only for Filipino units from Filipinas via Malacanang Palace
 		"uniques": [
-			"[+35]% Strength <when defending> <in [Friendly Land] tiles>",
+			"[+35]% Strength <in [Friendly Land] tiles>",
 			"[+25]% Strength <when defending> <in [Foreign Land] tiles>",
 			"[+20]% Strength <for [Lantaka (Filipinas)] units>",
 			"[+20]% Strength <for [Principalia] units>"
+		],
+		"civilopediaText": [
+			{
+				"text": "Granted by Malacanang Palace",
+				"link": "Wonders/Malacanang Palace (Filipinas)"
+			}
 		]
 	},
 	{
 		"name": "Pearl of the Orient (Tondo)", // only for Filipino units from Tondo via Malacanang Palace
 		"uniques": [
-			"[+35]% Strength <when defending> <in [Friendly Land] tiles>",
+			"[+35]% Strength <in [Friendly Land] tiles>",
 			"[+25]% Strength <when defending> <in [Foreign Land] tiles>",
 			"[+20]% Strength <for [Lantaka (Tondo)] units>",
 			"[+20]% Strength <for [Maharlika] units>"
+		],
+		"civilopediaText": [
+			{
+				"text": "Granted by Malacanang Palace",
+				"link": "Wonders/Malacanang Palace (Tondo)"
+			}
 		]
 	},
 	{
@@ -711,6 +939,26 @@
 		"uniques": [
 			"[+100]% Strength <when below [20] HP>",
 			"[-20]% Strength for enemy [Military] units in adjacent [All] tiles"
+		],
+		"civilopediaText": [
+			{
+				"text": "Granted by TON 618",
+				"link": "Wonders/TON 618"
+			}
+		]
+	},
+	{
+		"name": "Supernova Fury", // only for Orange Star units via Betelgeuse
+		"uniques": [
+			"[+90]% Strength <when attacking> <when below [30] HP>",
+			"[+60]% Strength <when defending>"
+			"Heals [50] damage if it kills a unit"
+		],
+		"civilopediaText": [
+			{
+				"text": "Granted by Betelgeuse",
+				"link": "Wonders/Betelgeuse"
+			}
 		]
 	}
 ]

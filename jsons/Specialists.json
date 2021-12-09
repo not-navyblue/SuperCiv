@@ -19,7 +19,7 @@
 	},
 	{
 		"name":"Engineer",
-		"production":2,
+		"production":4,
 		"greatPersonPoints": {"Great Engineer":4},
 		"color": [139,69,19]
 	},
@@ -35,8 +35,8 @@
 	},
 	{
 		"name": "Farmer",
-		"food": 4,
-		"greatPersonPoints": {"Great Farmer":4},
+		"food": 3,
+		"greatPersonPoints": {"Great Farmer":2},
 		"color": [0,255,0]
 	}
 ]
