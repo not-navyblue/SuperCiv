@@ -654,7 +654,8 @@
 			"Incompatible with [Adaptive Warfare (Defense)]",
 			"[+50]% Strength <when above [50] HP>",
 			"[+4] Movement <when below [30] HP>",
-			"[-10]% Strength <when below [30] HP>"
+			"[-10]% Strength <when below [30] HP>",
+			"Incompatible with [Honorable Strength]"
 		],
 		"unitTypes": ["Sword", "Gunpowder", "Archery", "Ranged Gunpowder", "Mounted", "Armored", "Siege"]
 	},
@@ -791,15 +792,43 @@
 		]
 	},
 	{
-		"name": "Great Generals I", // only for Companion Cavalry, Chu-Ko-Nu and their subsequent upgrades
-		"uniques": ["[Great General] is earned [50]% faster"]
+		"name": "Revolutionary Morale", // Revolutionary Epic
+		"uniques": [
+			"[+15]% Strength <before discovering [Printing Press]>",
+			"[+30]% Strength <after discovering [Printing Press]>",
+			"[+2] Movement <after discovering [Printing Press]>",
+			"[1] additional attacks per turn"
+		]
+	},
+	{
+		"name": "Honorable Strength" // Japanese units
+		"uniques": [
+			"[+35]% Strength <when below [100] HP>",
+			"Incompatible with [Defeatist]"
+		],
+		"civilopediaText": [
+			{
+				"text": "Granted by Japan's ability",
+				"link": "Nations/Japan"
+			}
+		]
+	},
+	{
+		"name": "Great Generals I", // only for Khnum's units, Companion Cavalry, Chu-Ko-Nu and their subsequent upgrades
+		"uniques": ["[Great General] is earned [50]% faster"],
+		"civilopediaText": [
+			{
+				"text": "Granted by Khnum",
+				"link": "Wonders/Khnum"
+			}
+		]
 	},
 	{
 		"name": "Great Generals II", // only for Panzer, Keshik, African Forest Elephant and their subsequent upgrades
 		"uniques": ["[Great General] is earned [100]% faster"]
 	},
 	{
-		"name": "Great Generals III", // only for Samurai, Legion and their subsequent upgrades
+		"name": "Great Generals III", // only for Orange Star units, Samurai, Legion and their subsequent upgrades
 		"uniques": ["[Great General] is earned [150]% faster"],
 		"civilopediaText": [
 			{
@@ -809,12 +838,16 @@
 		]
 	},
 	{
-		"name": "Quick Study", // only for French land units, Ballista and their subsequent upgrades
+		"name": "Quick Study", // only for French land units, Thoth's units, Ballista and their subsequent upgrades
 		"uniques": ["[50]% Bonus XP gain"],
 		"civilopediaText": [
 			{
 				"text": "Granted by France's ability",
 				"link": "Nations/France"
+			}, 
+			{
+				"text": "Granted by Thoth",
+				"link": "Wonders/Thoth"
 			}
 		]
 	},
@@ -848,7 +881,7 @@
 	},
 	{
 		"name": "Home Sweet Home", // only for Mehal Sefari and subsequent upgrades
-		"uniques": ["[+30]% Strength decreasing with distance from the capital"]
+		"uniques": ["[+40]% Strength decreasing with distance from the capital"]
 	},
 	{
 		"name": "Arctic Warfare", // only for Norwegian Ski Infantry, Cossack and their subsequent upgrades
@@ -886,16 +919,25 @@
 			"[+350]% Strength <during the [Information era]>",
 			"[+400]% Strength <during the [Future era]>",
 			"Incompatible with [Adaptive Tactics (Offense)]",
-			"Incompatible with [Adaptive Tactics (Defense)]",
+			"Incompatible with [Adaptive Tactics (Defense)]"
 		]
 	},
+	{
+		"name": "Voyaging Worker's Boost"
+		"uniques": [
+			"[+2] Movement <in [Water] tiles> <after discovering [Astronomy]>"
+		]
+	},
+	
+	// Any unit promotions beyond this line should not be added to UnHax Mode - SuperCiv
+	
 	{
 		"name": "Pearl of the Orient (Philippines)", // only for Filipino units from Philippines via Malacanang Palace
 		"uniques": [
 			"[+35]% Strength <in [Friendly Land] tiles>",
-			"[+25]% Strength <when defending> <in [Foreign Land] tiles>",
-			"[+20]% Strength <for [Lantaka (Philippines)] units>",
-			"[+20]% Strength <for [Katipunero] units>"
+			"[+25]% Strength <in [Foreign Land] tiles>",
+			"[+25]% Strength <for [Lantaka (Philippines)] units>",
+			"[+25]% Strength <for [Katipunero] units>"
 		],
 		"civilopediaText": [
 			{
@@ -908,9 +950,9 @@
 		"name": "Pearl of the Orient (Filipinas)", // only for Filipino units from Filipinas via Malacanang Palace
 		"uniques": [
 			"[+35]% Strength <in [Friendly Land] tiles>",
-			"[+25]% Strength <when defending> <in [Foreign Land] tiles>",
-			"[+20]% Strength <for [Lantaka (Filipinas)] units>",
-			"[+20]% Strength <for [Principalia] units>"
+			"[+25]% Strength <in [Foreign Land] tiles>",
+			"[+25]% Strength <for [Lantaka (Filipinas)] units>",
+			"[+25]% Strength <for [Principalia] units>"
 		],
 		"civilopediaText": [
 			{
@@ -923,9 +965,9 @@
 		"name": "Pearl of the Orient (Tondo)", // only for Filipino units from Tondo via Malacanang Palace
 		"uniques": [
 			"[+35]% Strength <in [Friendly Land] tiles>",
-			"[+25]% Strength <when defending> <in [Foreign Land] tiles>",
-			"[+20]% Strength <for [Lantaka (Tondo)] units>",
-			"[+20]% Strength <for [Maharlika] units>"
+			"[+25]% Strength <in [Foreign Land] tiles>",
+			"[+25]% Strength <for [Lantaka (Tondo)] units>",
+			"[+25]% Strength <for [Maharlika] units>"
 		],
 		"civilopediaText": [
 			{
@@ -937,7 +979,7 @@
 	{
 		"name": "Final Singularity", // only for Black Hole units via TON 618
 		"uniques": [
-			"[+100]% Strength <when below [20] HP>",
+			"[+120]% Strength <when below [20] HP>",
 			"[-20]% Strength for enemy [Military] units in adjacent [All] tiles"
 		],
 		"civilopediaText": [
@@ -950,14 +992,88 @@
 	{
 		"name": "Supernova Fury", // only for Orange Star units via Betelgeuse
 		"uniques": [
-			"[+90]% Strength <when attacking> <when below [30] HP>",
-			"[+60]% Strength <when defending>"
-			"Heals [50] damage if it kills a unit"
+			"[+100]% Strength <when attacking> <when below [30] HP>",
+			"[+60]% Strength <when defending>",
+			"Heals [60] damage if it kills a unit"
 		],
 		"civilopediaText": [
 			{
 				"text": "Granted by Betelgeuse",
 				"link": "Wonders/Betelgeuse"
+			}
+		]
+	},
+	{
+		"name": "Freezing Lune", // only for Blue Moon units via Ganymede
+		"uniques": [
+			"[+80]% Strength <when fighting in [Snow] tiles>",
+			"[+80]% Strength <when fighting in [Tundra] tiles>",
+			"Double movement in [Snow]",
+			"Double movement in [Tundra]"
+		],
+		"civilopediaText": [
+			{
+				"text": "Granted by Ganymede",
+				"link": "Wonders/Ganymede"
+			}
+		]
+	},
+	{
+		"name": "Nature's Wrath", // only for Green Earth units via Terra Nova
+		"uniques": [
+			"[+40]% Strength <for [Land] units>",
+			"[+10]% Strength <for [Water] units>",
+			"[+60]% Strength <for [Air] units>",
+			"[1] additional attacks per turn"
+		],
+		"civilopediaText": [
+			{
+				"text": "Granted by Terra Nova",
+				"link": "Wonders/Terra Nova"
+			}
+		]
+	},
+	{
+		"name": "Blinding Spirit", // only for Yellow Comet units via Hale-Bopp
+		"uniques": [
+			"[+60]% Strength <when above [59] HP>",
+			"[+90]% Strength <when below [41] HP>",
+			"[+2] Movement <when below [51] HP>"
+		],
+		"civilopediaText": [
+			{
+				"text": "Granted by Hale-Bopp",
+				"link": "Wonders/Hale-Bopp"
+			}
+		]
+	},
+	{
+		"name": "Predictive Tactics", // only for Boingo's units via Thoth
+		"uniques": [
+			"[+25]% Strength <before discovering [Writing]>",
+			"[+45]% Strength <after discovering [Writing]>",
+			"[1] additional attacks per turn",
+			"Ignores Zone of Control"
+		],
+		"civilopediaText": [
+			{
+				"text": "Granted by Thoth",
+				"link": "Wonders/Thoth"
+			}
+		]
+	},
+	{
+		"name": "Deceptive Tactics", // only for Oingo's units via Khnum
+		"uniques": [
+			"[+25]% Strength <before discovering [Drama and Poetry]>",
+			"[+45]% Strength <after discovering [Drama and Poetry]>",
+			"[+2] Movement <after discovering [Drama and Poetry]>",
+			"Ignores Zone of Control"
+		],
+		"civilopediaText": [
+			{
+				"text": "Granted by Khnum",
+				"link": "Wonders/Khnum"
 			}
 		]
 	}

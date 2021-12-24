@@ -1,41 +1,54 @@
 [
 	{
         "name": "discover cultural artifacts",
-        "notification": "We have discovered cultural artifacts in the ruins! (+20 culture)",
+        "notification": "We have discovered cultural artifacts in the ruins! (+20 Culture)",
         "uniques": ["Gain [20] [Culture]"],
-		"excludedDifficulties": ["Omniscient"],
+		"excludedDifficulties": ["Omniscient", "Kaizo"],
         "color": "#cf8ff7"
     },
 	{
 		"name": "discover cultural artifacts (Omniscient)",
-        "notification": "We have discovered cultural artifacts in the ruins! (+50 culture)",
+        "notification": "We have discovered cultural artifacts in the ruins! (+50 Culture)",
         "uniques": ["Gain [50] [Culture]"],
-		"excludedDifficulties": ["Settler", "Chieftain", "Warlord", "Prince", "King", "Emperor", "Immortal", "Deity"],
+		"excludedDifficulties": ["Settler", "Chieftain", "Warlord", "Prince", "King", "Emperor", "Immortal", "Deity", "Kaizo"],
+        "color": "#cf8ff7"
+    },
+	{
+		"name": "discover cultural artifacts (Kaizo)",
+        "notification": "We have discovered cultural artifacts in the ruins! (+80 Culture)",
+        "uniques": ["Gain [80] [Culture]"],
+		"excludedDifficulties": ["Settler", "Chieftain", "Warlord", "Prince", "King", "Emperor", "Immortal", "Deity", "Omniscient"],
         "color": "#cf8ff7"
     },
     {
         "name": "squatters willing to work for you",
         "notification": "A [Worker] has joined us!",
         "uniques": ["Free [Worker] found in the ruins"],
-        "excludedDifficulties": ["Prince", "King", "Emperor", "Immortal", "Deity", "Omniscient"]
+        "excludedDifficulties": ["Prince", "King", "Emperor", "Immortal", "Deity", "Omniscient", "Kaizo"]
     },
 	{
         "name": "squatters wishing to settle under your rule",
         "notification": "A [Settler] has joined us!",
         "uniques": ["Free [Settler] found in the ruins"],
-        "excludedDifficulties": ["Warlord", "Prince", "King", "Emperor", "Immortal", "Deity", "Omniscient"]
+        "excludedDifficulties": ["Warlord", "Prince", "King", "Emperor", "Immortal", "Deity", "Omniscient", "Kaizo"]
     },
     {
         "name": "your exploring unit receives training",
-        "notification": "An ancient tribe trained us in their ways of combat!",
+        "notification": "An ancient tribe trained us in their ways of combat! (+10 XP to this unit)",
         "uniques": ["This Unit gains [10] XP"],
-		"excludedDifficulties": ["Omniscient"]
+		"excludedDifficulties": ["Omniscient", "Kaizo"]
     },
     {
         "name": "your exploring unit receives training (Omniscient)",
-        "notification": "An ancient tribe trained us in their ways of combat!",
+        "notification": "An ancient tribe trained us in their ways of combat! (+30 XP to this unit)",
         "uniques": ["This Unit gains [30] XP"],
-		"excludedDifficulties": ["Settler", "Chieftain", "Warlord", "Prince", "King", "Emperor", "Immortal", "Deity"]
+		"excludedDifficulties": ["Settler", "Chieftain", "Warlord", "Prince", "King", "Emperor", "Immortal", "Deity", "Kaizo"]
+    },
+    {
+        "name": "your exploring unit receives training (Kaizo)",
+        "notification": "An ancient tribe trained us in their ways of combat! (+50 XP to this unit)",
+        "uniques": ["This Unit gains [50] XP"],
+		"excludedDifficulties": ["Settler", "Chieftain", "Warlord", "Prince", "King", "Emperor", "Immortal", "Deity", "Omniscient"]
     },
     {
         "name": "survivors (adds population to a city)",
@@ -44,17 +57,24 @@
 		"color": "#81c784"
     },
 	{
-        "name": "a stash of gold",
+        "name": "a stash of gold", // Deity and below
         "notification": "We have found a stash of [goldAmount] Gold in the ruins!",
         "uniques": ["Gain [50]-[100] [Gold]"],
-		"excludedDifficulties": ["Omniscient"],
+		"excludedDifficulties": ["Omniscient", "Kaizo"],
         "color": "#ffeb7f"
     },
 	{
-        "name": "a chest full of gold",
+        "name": "a chest full of gold", // Omniscient
         "notification": "We have found a chest filled with [goldAmount] Gold inside in the ruins!",
         "uniques": ["Gain [80]-[180] [Gold]"],
-		"excludedDifficulties": ["Settler", "Chieftain", "Warlord", "Prince", "King", "Emperor", "Immortal", "Deity"],
+		"excludedDifficulties": ["Settler", "Chieftain", "Warlord", "Prince", "King", "Emperor", "Immortal", "Deity", "Kaizo"],
+        "color": "#ffeb7f"
+    },
+	{
+        "name": "a room full of gold", // Kaizo
+        "notification": "We have found a hidden room filled to the brim with [goldAmount] Gold inside in the ruins!",
+        "uniques": ["Gain [95]-[210] [Gold]"],
+		"excludedDifficulties": ["Settler", "Chieftain", "Warlord", "Prince", "King", "Emperor", "Immortal", "Deity", "Omniscient"],
         "color": "#ffeb7f"
     },
 	{
@@ -72,25 +92,37 @@
         "name": "reveal nearby Barbarian camps",
         "notification": "You find evidence of Barbarian activity. Nearby Barbarian camps are revealed!",
         "uniques": ["Reveal up to [All] [Barbarian encampment] within a [10] tile radius"],
-		"excludedDifficulties": ["Omniscient"]
+		"excludedDifficulties": ["Omniscient", "Kaizo"]
     },
     {
         "name": "reveal nearby Barbarian camps (Omniscient)",
         "notification": "You find evidence of Barbarian activity. Nearby Barbarian camps are revealed!",
         "uniques": ["Reveal up to [All] [Barbarian encampment] within a [15] tile radius"],
-		"excludedDifficulties": ["Settler", "Chieftain", "Warlord", "Prince", "King", "Emperor", "Immortal", "Deity"]
+		"excludedDifficulties": ["Settler", "Chieftain", "Warlord", "Prince", "King", "Emperor", "Immortal", "Deity", "Kaizo"]
     },
     {
-        "name": "find a crudely-drawn map",
+        "name": "reveal nearby Barbarian camps (Kaizo)",
+        "notification": "You find evidence of Barbarian activity. Nearby Barbarian camps are revealed!",
+        "uniques": ["Reveal up to [All] [Barbarian encampment] within a [20] tile radius"],
+		"excludedDifficulties": ["Settler", "Chieftain", "Warlord", "Prince", "King", "Emperor", "Immortal", "Deity", "Omniscient"]
+    },
+    {
+        "name": "find a crudely-drawn map", // Deity and below
         "notification": "We have found a crudely-drawn map in the ruins!",
         "uniques": ["From a randomly chosen tile [4] tiles away, reveal tiles up to [4] tiles away with [80]% chance"],
-		"excludedDifficulties": ["Omniscient"]
+		"excludedDifficulties": ["Omniscient", "Kaizo"]
     },
     {
-        "name": "find an adequately-drawn map",
+        "name": "find an adequately-drawn map", // Omniscient
         "notification": "We have found an adequately-drawn map in the ruins!",
         "uniques": ["From a randomly chosen tile [9] tiles away, reveal tiles up to [9] tiles away with [90]% chance"],
-		"excludedDifficulties": ["Settler", "Chieftain", "Warlord", "Prince", "King", "Emperor", "Immortal", "Deity"]
+		"excludedDifficulties": ["Settler", "Chieftain", "Warlord", "Prince", "King", "Emperor", "Immortal", "Deity", "Kaizo"]
+    },
+    {
+        "name": "find an clearly-drawn map", // Kaizo
+        "notification": "We have found an clearly-drawn map in the ruins!",
+        "uniques": ["From a randomly chosen tile [15] tiles away, reveal tiles up to [21] tiles away with [95]% chance"],
+		"excludedDifficulties": ["Settler", "Chieftain", "Warlord", "Prince", "King", "Emperor", "Immortal", "Deity", "Omniscient"]
     },
     {
         "name": "discover holy symbols",
@@ -102,14 +134,21 @@
         "name": "an ancient prophecy",
         "notification": "We have found an ancient prophecy in the ruins, greatly increasing our spiritual connection! (+[faithAmount] Faith)",
         "uniques": ["Hidden when religion is disabled", "Gain enough Faith for [33]% of a Great Prophet", "Hidden after generating a Great Prophet"],
-		"excludedDifficulties": ["Omniscient"],
+		"excludedDifficulties": ["Omniscient", "Kaizo"],
 		"color": "#CDDDF4"
     },
     {
         "name": "an ancient prophecy (Omniscient)",
         "notification": "We have found an ancient prophecy in the ruins, greatly increasing our spiritual connection! (+[faithAmount] Faith)",
         "uniques": ["Hidden when religion is disabled", "Gain enough Faith for [50]% of a Great Prophet", "Hidden after generating a Great Prophet"],
-		"excludedDifficulties": ["Settler", "Chieftain", "Warlord", "Prince", "King", "Emperor", "Immortal", "Deity"],
+		"excludedDifficulties": ["Settler", "Chieftain", "Warlord", "Prince", "King", "Emperor", "Immortal", "Deity", "Kaizo"],
 		"color": "#CDDDF4"
     },
+    {
+        "name": "an ancient prophecy (Kaizo)",
+        "notification": "We have found an ancient prophecy in the ruins, greatly increasing our spiritual connection! (+[faithAmount] Faith)",
+        "uniques": ["Hidden when religion is disabled", "Gain enough Faith for [66]% of a Great Prophet", "Hidden after generating a Great Prophet"],
+		"excludedDifficulties": ["Settler", "Chieftain", "Warlord", "Prince", "King", "Emperor", "Immortal", "Deity", "Omniscient"],
+		"color": "#CDDDF4"
+    }
 ]

@@ -325,7 +325,7 @@
 		"unbuildable": true,
 		"uniques": ["Must be adjacent to [0] [Coast] tiles",
 			"Grants [Rejuvenation] ([all healing effects doubled]) to adjacent [{Military} {Land}] units for the rest of the game",
-			"Tile provides yield without assigned population"],
+			"Tile provides yield without assigned population", "Fresh water"],
 		"weight": 1
 	},
 	{

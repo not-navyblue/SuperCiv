@@ -43,9 +43,13 @@
 		"specialistSlots": {"Farmer": 2},
 		"maintenance": 1,
 		"hurryCostModifier": 25,
-		"uniques": ["[+1 Food] from [Deer] tiles [in this city]",
+		"uniques": [
+			"[+1 Food] from [Deer] tiles [in this city]",
 			"[+1 Food] from [Bananas] tiles [in this city]",
-			"[+1 Food] from [Wheat] tiles [in this city]"],
+			"[+1 Food] from [Wheat] tiles [in this city]",
+			"[+1 Food] from [Rice] tiles [in this city]",
+			"[+1 Food] from [Potato] tiles [in this city]",
+		],
 		"requiredTech": "Pottery"
 	},
 	{
@@ -443,6 +447,18 @@
 		"culture": 1,
 		"isNationalWonder": true,
 		"uniques": ["Requires a [Barracks] in all cities", "All newly-trained [non-air] units [in this city] receive the [Morale] promotion",
+			"Cost increases by [30] per owned city"],
+		"requiredTech": "Iron Working"
+	},
+	{
+		"name": "Revolutionary Epic",
+		"uniqueTo": "France",
+		"replaces": "Heroic Epic",
+		"cost": 100,
+		"culture": 2,
+		"happiness": 2,
+		"isNationalWonder": true,
+		"uniques": ["Requires a [Barracks] in all cities", "All newly-trained [non-air] units [in this city] receive the [Revolutionary Morale] promotion",
 			"Cost increases by [30] per owned city"],
 		"requiredTech": "Iron Working"
 	},
@@ -1282,11 +1298,11 @@
 		"isNationalWonder": true,
 		"uniqueTo": "Philippines",
 		"replaces": "Palace",
-		"production": 7,
-		"science": 7,
-		"gold": 7,
-		"culture": 3,
-		"cityStrength": 4,
+		"production": 4,
+		"science": 8,
+		"gold": 4,
+		"culture": 2,
+		"cityStrength": 3,
 		"cost": 1,
 		"uniques": [
 			"Indicates the capital city",
@@ -1302,10 +1318,10 @@
 		"isNationalWonder": true,
 		"uniqueTo": "Filipinas",
 		"replaces": "Palace",
-		"production": 7,
-		"science": 7,
-		"gold": 7,
-		"culture": 3,
+		"production": 8,
+		"science": 5,
+		"gold": 3,
+		"culture": 1,
 		"cityStrength": 4,
 		"cost": 1,
 		"uniques": [
@@ -1322,11 +1338,11 @@
 		"isNationalWonder": true,
 		"uniqueTo": "Tondo",
 		"replaces": "Palace",
-		"production": 7,
-		"science": 7,
-		"gold": 7,
-		"culture": 3,
-		"cityStrength": 4,
+		"production": 4,
+		"science": 4,
+		"gold": 4,
+		"culture": 7,
+		"cityStrength": 2,
 		"cost": 1,
 		"uniques": [
 			"Indicates the capital city",
@@ -1364,8 +1380,8 @@
 		"uniqueTo": "Orange Star",
 		"replaces": "Palace",
 		"production": 4,
-		"science": 5,
-		"gold": 5,
+		"science": 6,
+		"gold": 6,
 		"culture": 2,
 		"cityStrength": 3
 		"cost": 1,
@@ -1374,6 +1390,106 @@
 			"May buy [UnHax Mode - Base] buildings for [0] [Gold] [in this city]",
 			"[Military] units gain the [Supernova Fury] promotion",
 			"[Military] units gain the [Great Generals III] promotion"
+		]
+	},
+	
+	{
+		"name": "Ganymede" // Blue Moon
+		"isNationalWonder": true,
+		"uniqueTo": "Blue Moon",
+		"replaces": "Palace",
+		"production": 6,
+		"science": 4,
+		"gold": 4,
+		"culture": 3,
+		"cityStrength": 4
+		"cost": 1,
+		"uniques": [
+			"Indicates the capital city",
+			"May buy [UnHax Mode - Base] buildings for [0] [Gold] [in this city]",
+			"[Military] units gain the [Freezing Lune] promotion",
+			"[+2 Production] from every [Snow]",
+			"[+2 Production] from every [Tundra]"
+		]
+	},
+	
+	{
+		"name": "Terra Nova" // Green Earth
+		"isNationalWonder": true,
+		"uniqueTo": "Green Earth",
+		"replaces": "Palace",
+		"production": 4,
+		"science": 7,
+		"gold": 5,
+		"culture": 2,
+		"cityStrength": 3
+		"cost": 1,
+		"uniques": [
+			"Indicates the capital city",
+			"May buy [UnHax Mode - Base] buildings for [0] [Gold] [in this city]",
+			"[Military] units gain the [Nature's Wrath] promotion"
+			"[+1 Production, +1 Science] from every [Forest]",
+			"[+1 Production, +1 Science] from every [Jungle]"
+		]
+	},
+	
+	{
+		"name": "Hale-Bopp" // Yellow Comet
+		"isNationalWonder": true,
+		"uniqueTo": "Yellow Comet",
+		"replaces": "Palace",
+		"production": 5,
+		"science": 4,
+		"gold": 4,
+		"culture": 4,
+		"cityStrength": 4
+		"cost": 1,
+		"uniques": [
+			"Indicates the capital city",
+			"May buy [UnHax Mode - Base] buildings for [0] [Gold] [in this city]",
+			"[Military] units gain the [Blinding Spirit] promotion",
+			"[Land] units gain the [Blitz] promotion",
+			"[Water] units gain the [Logistics] promotion",
+			"[Air] units gain the [Logistics] promotion"
+		]
+	},
+	
+	// Requires Oingo Boingo
+	{
+		"name": "Thoth", // Boingo
+		"isNationalWonder": true,
+		"uniqueTo": "Boingo",
+		"replaces": "Palace",
+		"production": 5
+		"science": 7,
+		"gold": 4,
+		"culture": 2,
+		"cityStrength": 3
+		"cost": 1,
+		"uniques": [
+			"Indicates the capital city",
+			"May buy [UnHax Mode - Base] buildings for [0] [Gold] [in this city]",
+			"[Military] units gain the [Predictive Tactics] promotion",
+			"[Military] units gain the [Quick Study] promotion"
+		]
+	},
+	
+	{
+		"name": "Khnum", // Oingo
+		"isNationalWonder": true,
+		"uniqueTo": "Oingo",
+		"replaces": "Palace",
+		"production": 5,
+		"science": 3,
+		"gold": 4,
+		"culture": 6,
+		"cityStrength": 3
+		"cost": 1,
+		"uniques": [
+			"Indicates the capital city",
+			"May buy [UnHax Mode - Base] buildings for [0] [Gold] [in this city]",
+			"[Military] units gain the [Deceptive Tactics] promotion",
+			"[Military] units gain the [Great Generals I] promotion"
 		]
 	},
 	

@@ -224,6 +224,25 @@
 
 	//Civilization unique improvements
 	{
+		"name": "Great Wall (China)",
+		"uniqueTo": "China",
+		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Snow"],
+		"gold": 2,
+		"turnsToBuild": 2,
+		"uniques": [
+			"Gives a defensive bonus of [50]%",
+			"[+1 Gold, +1 Culture, +1 Science] for each adjacent [Great Wall (China)]",
+			"[+2 Culture, +2 Science] <after discovering [Flight]>",
+			"Cannot be built on [Bonus resource] tiles",
+			"Cannot be built on [Luxury resource] tiles",
+			"Cannot be built on [Strategic resource] tiles",
+			"Tile provides yield without assigned population"
+		],
+		"techRequired": "Masonry",
+		"shortcutKey": "G"
+	},
+	
+	{
 		"name": "Sphinx",
 		"uniqueTo": "Egypt",
 		"terrainsCanBeBuiltOn": ["Desert", "Tundra", "Plains", "Grassland", "Snow", "Flood plains", "Hill"],
@@ -251,7 +270,7 @@
 	
 	{
 		"name": "Pa",
-		"uniqueTo": "Polynesia"
+		"uniqueTo": "Polynesia",
 		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Snow","Forest","Jungle"],
 		"turnsToBuild": 2,
 		"techRequired": "Agriculture",
@@ -267,8 +286,8 @@
 	
 	{
 		"name": "Roman Fort",
-		"uniqueTo": "Rome"
-		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Snow","Forest","Jungle"],
+		"uniqueTo": "Rome",
+		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Snow"],
 		"turnsToBuild": 2,
 		"techRequired": "Iron Working",
 		"uniques": [

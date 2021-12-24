@@ -198,9 +198,9 @@
 		"innerColor": [239,236,148],
 		"favoredReligion": "Christianity",
 		"uniqueName": "Ancien Régime",
-		"uniqueText": "+2 Culture per turn from cities before discovering Steam Power. Land Melee units gain the Blitz and Quick Study promotions, and non-nuke Military units gain the Morale promotion.",
+		"uniqueText": "+4 Culture per turn from cities before discovering Steam Power. Land Melee units gain the Blitz and Quick Study promotions, and non-nuke Military units gain the Morale promotion.",
 		"uniques": [
-			"[+2 Culture] per turn from cities before [Steam Power]",
+			"[+4 Culture] per turn from cities before [Steam Power]",
 			"[{Land} {Melee}] units gain the [Blitz] promotion",
 			"[{Land} {Melee}] units gain the [Quick Study] promotion",
 			"[{non-air} {Military}] units gain the [Morale] promotion",
@@ -232,13 +232,15 @@
 		"innerColor": [0,0,0],
 		"favoredReligion": "Christianity",
 		"uniqueName": "Siberian Riches",
-		"uniqueText": "+2 Production and +1 Science from every strategic resource. Quantity of Horses, Iron, Coal, and Uranium produced are doubled.",
+		"uniqueText": "+2 Production and +1 Science from every strategic resource, and +1 Production from every Mine and Railroad. Quantity of Horses, Iron, Coal, and Uranium produced are doubled.",
 		"uniques": [
 			"[+2 Production, +1 Science] from every [Strategic resource]",
 			"Double quantity of [Horses] produced",
 			"Double quantity of [Iron] produced",
 			"Double quantity of [Coal] produced",
-			"Double quantity of [Uranium] produced"
+			"Double quantity of [Uranium] produced",
+			"[+1 Production] from every [Mine]",
+			"[+1 Production] from every [Railroad]"
 		],
 		"cities": ["Moscow","St. Petersburg","Novgorod","Rostov","Yaroslavl","Yekaterinburg","Yakutsk","Vladivostok","Smolensk","Orenburg",
 			"Krasnoyarsk","Khabarovsk","Bryansk","Tver","Novosibirsk","Magadan","Murmansk","Irkutsk","Chita","Samara",
@@ -299,9 +301,9 @@
 		"uniqueText": "+2 Gold, +1 Science, and +1 Faith from each Trade Route. Quantity of Oil produced is quadrupled."
 		"uniques": [
 			"[+2 Gold, +1 Science, +1 Faith] from each Trade Route", 
-			"Double quantity of [Oil] produced",
+			"Double quantity of [Oil] produced", // duplicating the same unique whose values cannot be changed causes the effects of the unique to stack
 			"Double quantity of [Oil] produced"
-		], // duplicating the same unique that whose values cannot be changed causes the effects of the unique to stack
+		], 
 		"cities": ["Mecca","Medina","Damascus","Baghdad","Najran","Kufah","Basra","Khurasan","Anjar","Fustat",
 			"Aden","Yamama","Muscat","Mansura","Bukhara","Fez","Shiraz","Merw","Balkh","Mosul",
 			"Aydab","Bayt","Suhar","Taif","Hama","Tabuk","Sana'a","Shihr","Tripoli","Tunis","Kairouan","Algiers","Oran"]
@@ -359,11 +361,14 @@
 		"innerColor": [185,0,0],
 		"favoredReligion": "Shinto",
 		"uniqueName": "Bushido",
-		"uniqueText": "Units fight as though they were at full strength even when damaged. +2 Movement and +20% Strength for Military units when at war.",
+		"uniqueText": "Units fight as though they were at full strength even when damaged. +2 Movement and +20% Strength for Military units when at war. Non-nuke Military units gain the Honorable Strength promotion.",
 		"uniques": [
 			"Units fight as though they were at full strength even when damaged",
 			"[+2] Movement <for [Military] units> <when at war>",
-			"[+20]% Strength <for [Military] units> <when at war>"
+			"[+20]% Strength <for [Military] units> <when at war>",
+			"[{non-air} {Military}] units gain the [Honorable Strength] promotion",
+			"[{Fighter} {Military}] units gain the [Honorable Strength] promotion",
+			"[{Bomber} {Military}] units gain the [Honorable Strength] promotion"
 		],
 		"cities": ["Kyoto","Osaka","Tokyo","Satsuma","Kagoshima","Nara","Nagoya","Izumo","Nagasaki","Yokohama",
 			"Shimonoseki","Matsuyama","Sapporo","Hakodate","Ise","Toyama","Fukushima","Suo","Bizen","Echizen",
@@ -381,7 +386,7 @@
 		"startIntroPart2": "Gandhi, your people look to you to lead them to even greater heights of glory! Can you help your people realize their great potential, to once again become the world's center of arts, culture and religion? Can you build a civilization that will stand the test of time?",
 		"declaringWar": "I have just received a report that large numbers of my troops have crossed your borders.",
 		"attacked": "My attempts to avoid violence have failed. An eye for an eye only makes the world blind.",
-		"defeated": "You can chain me, you can torture me, you can even destroy this body, but you will never imprison my mind. ",
+		"defeated": "You can chain me, you can torture me, you can even destroy this body, but you will never imprison the thermonuclear missiles heading to your capital.", // lol xD
 		"introduction": "Hello, I am Mohandas Gandhi. My people call me Bapu, but please, call me friend.",
 		"neutralHello": "I wish you peace.",
 		"hateHello": "What do you want?",
@@ -456,12 +461,14 @@
 		"innerColor": [18,84,30],
 		"favoredReligion": "Islam",
 		"uniqueName": "Barbary Corsairs",
-		"uniqueText": "66% less maintenance costs and 25% more Strength for naval units. 50% chance of capturing defeated Barbarian naval units and earning 25 Gold. Naval melee units gain the Boarding Party I promotion.",
+		"uniqueText": "66% less maintenance costs and 25% more Strength for naval units. 50% chance of capturing defeated Barbarian naval units and earning 25 Gold. Naval melee units gain the Boarding Party I promotion. +3 Production in all cities, and an additional +5 Gold for coastal cities.",
 		"uniques": [
 			"[-66]% maintenance costs for [Water] units",
 			"50% chance of capturing defeated Barbarian naval units and earning 25 Gold",
 			"[+25]% Strength <for [Water] units>",
-			"[Melee Water] units gain the [Boarding Party I] promotion"
+			"[Melee Water] units gain the [Boarding Party I] promotion",
+			"[+3 Production] [in all cities]",
+			"[+5 Gold] [in all coastal cities]"
 		],
 		"cities": ["Istanbul","Edirne","Ankara","Bursa","Konya","Samsun","Gaziantep","Diyarbakır","Izmir","Kayseri","Malatya",
 			"Mersin","Antalya","Zonguldak","Denizli","Ordu","Muğla","Eskişehir","Inebolu","Sinop","Adana","Artvin",
@@ -552,13 +559,13 @@
 		"innerColor": [244,232,54],
 		"favoredReligion": "Zoroastrianism",
 		"uniqueName": "Achaemenid Legacy",
-		"uniqueText": "Golden Age length is increased by 60%. +5 Happiness in all cities. While in a Golden Age, all units gain +1 Movement and +15% Strength, and all cities gain an additional +2 Science when not at war.",
+		"uniqueText": "Length of Golden Ages is doubled. +10 Happiness in all cities. While in a Golden Age, all units gain +1 Movement and +15% Strength, and all cities gain an additional +2 Science when not at war.",
 		"uniques": [
-			"Golden Age length increased by [60]%", 
+			"Golden Age length increased by [100]%", 
 			"[+1] Movement <for [All] units> <during a Golden Age>", 
 			"[+15]% Strength <for [All] units> <during a Golden Age>",
 			"[+2 Science] [in all cities] <when not at war> <during a Golden Age>",
-			"[+5 Happiness] [in all cities]"
+			"[+10 Happiness] [in all cities]"
 		],
 		"cities": ["Persepolis","Parsagadae","Susa","Ecbatana","Tarsus","Gordium","Bactra","Sardis","Ergili","Dariushkabir",
 			"Ghulaman","Zohak","Istakhr","Jinjan","Borazjan","Herat","Dakyanus","Bampur","Turengtepe","Rey","Shiraz",
@@ -588,13 +595,14 @@
 		"innerColor": [255,255,78],
 		"favoredReligion": "Christianity",
 		"uniqueName": "Wayfinding",
-		"uniqueText": "Units can embark and move over water tiles immediately, and have normal vision when embarked. +2 Movement for naval and embarked units. 20% additional Strength for units within 3 tiles of a Moai.",
+		"uniqueText": "Units can embark and move over water tiles immediately, and have normal vision when embarked. +2 Movement for naval and embarked units. 20% additional Strength for units within 3 tiles of a Moai. Starts with the Sailing technology.",
 		"uniques": [
 			"Can embark and move over Coasts and Oceans immediately", 
 			"Normal vision when embarked <for [All] units>", 
 			"[+2] Movement <for [Water] units>",
 			"[+2] Movement <for [Embarked] units>",
-			"+[20]% Strength if within [3] tiles of a [Moai]"
+			"+[20]% Strength if within [3] tiles of a [Moai]",
+			"Starts with [Sailing]"
 		],
 		"cities": ["Honolulu","Samoa","Tonga","Nuku Hiva","Raiatea","Aotearoa","Tahiti","Hilo","Te Wai Pounamu","Rapa Nui",
 			"Tuamotu","Rarotonga","Tuvalu","Tubuai","Mangareva","Oahu","Kiritimati","Ontong Java","Niue","Rekohu",
@@ -621,11 +629,12 @@
 		"innerColor": [193,21,17],
 		"favoredReligion": "Buddhism",
 		"uniqueName": "Father Governs Children",
+		"uniqueText": "+70% Food, Culture, and Faith from City-States. Military units gifted by City-States start with additional 30 XP. Resting point for Influence with City-States is increased by 20.",
 		"uniques": [
-			"[+60]% [Food] from City-States",
-			"[+60]% [Culture] from City-States",
-			"[+60]% [Faith] from City-States",
-			"Military Units gifted from City-States start with [+10] XP",
+			"[+70]% [Food] from City-States",
+			"[+70]% [Culture] from City-States",
+			"[+70]% [Faith] from City-States",
+			"Military Units gifted from City-States start with [+30] XP",
 			"Resting point for Influence with City-States is increased by [20]"
 		],
 		"cities": ["Sukhothai","Si Satchanalai","Muang Saluang","Lampang","Phitsanulok","Kamphaeng Pet","Nakhom Chum","Vientiane",
@@ -852,7 +861,7 @@
 		"leaderName": "Attila the Hun",
 		"adjective": ["Hunnic"],
 		"startBias": ["Avoid [Jungle]", "Avoid [Forest]"],
-		"preferredVictorType": "Domination",
+		"preferredVictoryType": "Domination",
 
 		"startIntroPart1": "Your men stand proudly to greet you, Great Attila, grand warrior and ruler of the Hunnic empire. Together with your brother Bleda you expanded the boundaries of your empire, becoming the most powerful and frightening force of the 5th century. You bowed the Eastern Roman Emperors to your will and took kingdom after kingdom along the Danube and Nisava Rivers. As the sovereign ruler of the Huns, you marched your army across Europe into Gaul, planning to extend your already impressive lands all the way to the Atlantic Ocean. Your untimely death led to the quick disintegration and downfall of your empire, but your name and deeds have created an everlasting legacy for your people. ",
 		"startIntroPart2": "Fearsome General, your people call for the recreation of a new Hunnic Empire, one which will make the exploits and histories of the former seem like the faded dreaming of a dying sun. Will you answer their call to regain your rightful prominence and glory? Will you mount your steadfast steed and lead your armies to victory? Will you build a civilization that stands the test of time? ",
@@ -867,7 +876,7 @@
 		"innerColor": [70, 0, 4],
 		"favoredReligion": "Tengriism",
 		"uniqueName": "Scourge of God",
-		"uniqueText": "Starts with the Animal Husbandry technology already unlocked, and Pastures gain +2 Production. Cities are razed twice as fast. \"Borrows\" city names from other civilizations in the game. Certain melee units gain the Besiege promotion, and Siege units gain the Volley promotion.",
+		"uniqueText": "Starts with the Animal Husbandry technology already unlocked, and Pastures gain +2 Production. Cities are razed twice as fast. \"Borrows\" city names from other civilizations in the game. Relevant Military units gain either the Besiege promotion or the Volley promotion.",
 		"uniques": [
 			"[+2 Production] from every [Pasture]", 
 			"Cities are razed [2] times as fast", 
@@ -875,6 +884,8 @@
 			"\"Borrows\" city names from other civilizations in the game",
 			"[Sword] units gain the [Besiege] promotion",
 			"[Gunpowder] units gain the [Besiege] promotion",
+			"[Archery] units gain the [Volley] promotion",
+			"[Ranged Gunpowder] units gain the [Volley] promotion",
 			"[Siege] units gain the [Volley] promotion"
 		],
 		"cities": ["Atilla's Court"]
@@ -899,11 +910,12 @@
 		"innerColor": [255, 255, 255],
 		"favoredReligion": "Christianity",
 		"uniqueName": "Dutch East India Company",
-		"uniqueText": "75% of Happiness is retained from the last copy of a luxury resource that has been traded away. +2 Gold and +2 Happiness from every luxury resource. +3 Gold from each Trade Route.",
+		"uniqueText": "75% of Happiness is retained from the last copy of a luxury resource that has been traded away. +2 Gold and +2 Happiness from every luxury resource. +3 Gold from each Trade Route and Polder, with an additional +2 Culture from every Polder.",
 		"uniques": [
 			"Retain [75]% of the happiness from a luxury after the last copy has been traded away",
 			"[+2 Gold, +2 Happiness] from every [Luxury resource]",
-			"[+3 Gold] from each Trade Route"
+			"[+3 Gold] from each Trade Route",
+			"[+3 Gold, +2 Culture] from every [Polder]"
 		],
 		"cities": ["Amsterdam", "Rotterdam", "Utrecht", "Groningen", "Breda", "Nijmegen", "Den Haag", "Haarlem", "Arnhem", "Zutphen", "Maastricht", "Tilburg", "Eindhoven", "Dordrecht", "Leiden", "'s Hertogenbosch", "Almere", "Alkmaar", "Brielle", "Vlissingen", "Apeldoorn", "Enschede", "Amersfoort", "Zwolle", "Venlo", "Uden", "Grave", "Delft", "Gouda", "Nieuwstadt", "Weesp", "Coevorden", "Kerkrade"]
 	},
@@ -1034,12 +1046,13 @@
 		"innerColor": [61, 0, 109],
 		"favoredReligion": "Christianity",
 		"uniqueName": "Patriarchate of Constantinople",
-		"uniqueText": "May choose 1 additional belief of any type when founding and enhancing a religion, totalling 7 beliefs in one religion. Receive a free Great Prophet upon discovering the Theology technology. +5 Culture and +5 Faith in holy cities.",
+		"uniqueText": "May choose 1 additional belief of any type when founding and enhancing a religion, totalling 7 beliefs in one religion. Receive a free Great Prophet upon discovering the Theology technology. +5 Culture and +5 Faith in holy cities and in the capital.",
 		"uniques": [
 			"May choose [1] additional belief(s) of any type when [founding] a religion",
 			"May choose [1] additional belief(s) of any type when [enhancing] a religion",
 			"Receive free [Great Prophet] when you discover [Theology]",
-			"[+5 Culture, +5 Faith] [in holy cities]"
+			"[+5 Culture, +5 Faith] [in holy cities]",
+			"[+5 Culture, +5 Faith] [in capital]"
 		],
 
 		"cities": ["Constantinople", "Adrianople", "Nicaea", "Antioch", "Varna", "Ohrid", "Nicomedia", "Trebizond", "Cherson", "Sardica", 
@@ -1050,7 +1063,7 @@
 	{
 		"name": "Celts",
 		"leaderName": "Boudicca",
-		"adjective": ["celtic"],
+		"adjective": ["Celtic"],
 		"startBias": ["Forest"],
 		"preferredVictoryType": "Domination",
 
@@ -1078,11 +1091,12 @@
 		"innerColor": [157,172,255],
 		"favoredReligion": "Christianity",
 		"uniqueName": "Druidic Lore",
-		"uniqueText": "All cities gain +1 Faith and +2 Production with 1 or 2 neighboring unimproved Forest tiles, or +2 Faith and +1 Production with 3 to 6 neighboring unimproved Forest tiles. All cities gain +3 Production with 1 to 7 improved Forest tiles. All Land units, including civilians and non-Sword/Gunpowder units, gain the Woodsman promotion.",
+		"uniqueText": "All cities gain +1 Faith and +2 Production with 1 or 2 neighboring unimproved Forest tiles, or +2 Faith and +1 Production with 3 to 6 neighboring unimproved Forest tiles. All cities gain +3 Production, +2 Faith, and +1 Gold, and an additional +3 Production for cities with 1 to 7 improved Forest tiles. All Land units, including civilians and non-Sword/Gunpowder units, gain the Woodsman promotion.",
 		"uniques": [
 			"[+1 Faith, +2 Production] [in all cities] <with [1] to [2] neighboring [unimproved] [Forest] tiles>",
 			"[+2 Faith, +1 Production] [in all cities] <with [3] to [6] neighboring [unimproved] [Forest] tiles>",
 			"[+3 Production] [in all cities] <with [1] to [7] neighboring [improved] [Forest] tiles>",
+			"[+3 Production, +2 Faith, +1 Gold] [in all cities]"
 			"[Land] units gain the [Woodsman] promotion"
 		],
 		"cities": ["Edinburgh","Dublin","Cardiff","Truro","Nantes","Douglas","Glasgow","Cork","Aberystwyth",
@@ -1094,7 +1108,7 @@
 	{
 		"name": "Ethiopia",
 		"leaderName": "Haile Selassie",
-		"adjective": ["ethiopian"],
+		"adjective": ["Ethiopian"],
 		"startBias": ["Jungle"],
 		"preferredVictoryType": "Cultural",
 
@@ -1186,6 +1200,40 @@
 			"Q'umarkaj","Nakbe","Cerros","Xunantunich","Takalik Abaj","Cival","San Bartolo","Altar de Sacrificios","Seibal",
 			"Caracol","Naranjo","Dos Pilas","Mayapan","Ixinche","Zaculeu","Kabah"]
 	},
+	
+	/* commenting this now because i am kinda reluctant to formally add this civ to this mod
+	{
+		"name": "Republic of The Philippines",
+		"leaderName": "Corazon Aquino",
+		"adjective": ["Filipino"],
+		"startBias": ["Coast"],
+		"preferredVictoryType": "Diplomatic",
+		
+		// I am not creative enough to make her intro :(
+		//"startIntroPart1": "",
+		//"startIntroPart2": "",
+		
+		"declaringWar": "You have gone too far - the spirit of democracy that inheres in our race and animates my actions can not be allowed to die.",
+		"attacked": "You may think me but a humble housewife, but I will fight for my country until the very end. I shall not submit.",
+		"defeated": "And so it seems I must lay to rest this restless dream of Philippine freedom.",
+		"introduction": "Kumusta - I am Corazon Aquino, President of the Philippines. What brings you here to our island country?",
+		"tradeRequest": "On behalf of the fair Philippines, I offer this deal...",
+		
+		"neutralHello": "Hello again.",
+		"hateHello": "What do you want?",
+		"afterPeace": "I agree - now is the time for peace.",
+		
+		"uniqueName": "Ina ng Demokrasya",
+		"uniqueText": "City-State territory always counts as friendly territory, and resting point for Influence with them is increased by 30. When declaring friendship, both parties gain a [20]% boost to great person generation. +1 to all stats in all cities when not at war, and +3 Production, +2 Gold, and +1 Science & Faith in all cities when at war.",
+		"uniques": [
+			"City-State territory always counts as friendly territory",
+			"Resting point for Influence with City-States is increased by [30]",
+			"When declaring friendship, both parties gain a [20]% boost to great person generation",
+			"[+1 Science, +1 Culture, +1 Faith, +1 Gold, +1 Happiness, +1 Food, +1 Production] [in all cities] <when not at war>",
+			"[+3 Production, +1 Science, +1 Faith, +2 Gold] [in all cities] <when at war>"
+		]
+	},
+	*/
 
 
 	// City-States sorted by cityStateType, name
@@ -1387,7 +1435,7 @@
 		"cities": ["Vancouver"]
 	},
 	{
-		"name": "Venice",
+		"name": "Venice", // removed and elevated to playable Civ in BNW
 		"adjective": ["Venetian"],
 		"cityStateType": "Maritime",
 		"startBias": ["Coast"],
@@ -1594,12 +1642,21 @@
 
 		"declaringWar": "By god's grace we will not allow these atrocities to occur any longer. We declare war!",
 		"attacked": "May god have mercy on your evil soul.",
-		"defeated": "I for one welcome our new conquer overlord!",
+		"defeated": "I for one welcome our new conqueror overlord!",
 		"outerColor": [0, 0, 0],
 		"innerColor": [198,255,192],
 		"cities": ["Jerusalem"]
 	},
-
+	{
+		"name": "Taiwan", // time to spite everyone and risk -696969696969 social credits xd xd xd
+		"adjective": ["Taiwanese"],
+		"cityStateType": "Maritime",
+		"startBias": ["Coast"]
+		
+		"outerColor": [0, 0, 0],
+		"innerColor": [255, 255, 255], // placeholder
+		"cities": ["Taiwan"]
+	},
 
 
 	//Barbarian

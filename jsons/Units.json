@@ -6,17 +6,20 @@
 	{
 		"name": "Worker",
 		"unitType": "Civilian",
-		"movement": 2,
-		"uniques": ["Can build [Land] improvements on tiles"],
+		"movement": 3,
+		"uniques": [
+			"Can build [Land] improvements on tiles"
+		],
+		"promotions": ["Voyaging Worker's Boost"],
 		"cost": 70
 	},
 	{
 		"name": "Settler",
 		"unitType": "Civilian",
-		"movement": 2,
+		"movement": 3,
 		"cost": 106,
 		"uniques": ["Founds a new city", "Excess Food converted to Production when under construction",
-			"Requires at least [2] population"],
+			"Requires at least [2] population", "Can move immediately once bought"],
 		"hurryCostModifier": 20
 	},
 	{
@@ -161,7 +164,8 @@
 		"movement": 4,
 		"cost": 30,
 		"requiredTech": "Sailing",
-		"uniques": ["Cannot enter ocean tiles until Astronomy", "May create improvements on water resources", "Uncapturable"]
+		"uniques": ["Cannot enter ocean tiles until Astronomy", "May create improvements on water resources", "Uncapturable"],
+		"promotions": ["Voyaging Worker's Boost"]
 	},
 	{
 		"name": "Trireme",
@@ -651,14 +655,14 @@
 		"replaces": "Knight",
 		"uniqueTo": "Spain",
 		"movement": 4,
-		"strength": 20,
-		"cost": 115,
+		"strength": 23,
+		"cost": 100,
 		"requiredTech": "Chivalry",
 		"requiredResource": "Horses",
 		"upgradesTo": "Cavalry",
 		"obsoleteTech": "Military Science",
 		"uniques": ["Can move after attacking", "Founds a new city <on foreign continents>", "[+2] Sight", "Defense bonus when embarked"],
-		"promotions": ["Sentry"],
+		"promotions": ["Sentry", "Mobility"],
 		"attackSound": "horse"
 		//Conquistador should have no penalty attacking cities
 		//Ability to found new cities can only be used on a foreign continent that does not contain the Spanish capital.
@@ -805,7 +809,7 @@
 		"uniqueTo": "Japan",
 		"movement": 2,
 		"strength": 27,
-		"cost": 120,
+		"cost": 100,
 		"requiredTech": "Steel",
 		"upgradesTo": "Musketman",
 		"obsoleteTech": "Gunpowder",
@@ -1390,12 +1394,12 @@
 		"rangedStrength": 50,
 		"range": 8,
 		"interceptRange": 8,
-		"cost": 375,
+		"cost": 325,
 		"requiredTech": "Radar",
 		"upgradesTo": "Jet Fighter",
 		"uniques": ["[100]% chance to intercept air attacks", "[+150]% Strength <vs [Bomber] units>", "[+150]% Strength <vs [Helicopter] units>",
 			"[+33]% Strength <vs [Fighter] units>"],
-		"promotions": ["Sortie"],
+		"promotions": ["Sortie", "Logistics"],
 		"attackSound": "machinegun"
 	},
 	{

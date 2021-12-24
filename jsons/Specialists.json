@@ -36,7 +36,7 @@
 	{
 		"name": "Farmer",
 		"food": 3,
-		"greatPersonPoints": {"Great Farmer":2},
+		"greatPersonPoints": {"Great Farmer": 1},
 		"color": [0,255,0]
 	}
 ]
