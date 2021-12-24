@@ -1,4 +1,68 @@
 # SuperCiv Changelog
+## Beta v0.5 (December 24, 2021 Update)
+*Soft Release 5*
+### Major Changes
+- Added new unit promotions
+- Added a new City-State: Taiwan
+- Added a new difficulty harder than Omniscient
+- Added a new French unique replacement for Heroic Epic
+- Added a new Chinese unique improvement
+- Added the following Pantheons:
+  * Earth Mother
+  * God-King
+  * Sun God
+  * Tears of the Gods
+  * The Frozen Mother
+  * Tidal Connection
+- Added the following resources:
+  * Cinnamon
+  * Cocoa
+  * Coffee
+  * Diamond
+  * Jade
+  * Lapis Lazuli
+  * Mercury
+  * Potato
+  * Rice
+  * Tea
+- Added unique Palace replacements for the following nations:
+  * Blue Moon
+  * Green Earth
+  * Yellow Comet
+  * Oingo
+  * Boingo
+- Buffed the following nations' unique abilities:
+  * Byzantium
+  * Celts
+  * France
+  * The Huns
+  * The Netherlands
+  * The Ottomans
+  * Persia
+  * Polynesia
+  * Russia
+  * Siam
+#### Minor Changes
+- Added the national unique ability description for Siam
+- Modified the Deity and Omniscient difficulties
+- Moved Coal discovery from Scientific Theory to Industrialization
+- Modified the Fountain of Youth natural wonder to count as fresh water
+- Adjusted the following buildings:
+  * Betelgeuse [buffed]
+  * Malacanang Palace [balanced]
+- Buffed the following units:
+  * Conquistador
+  * Samurai
+  * Settler
+  * Worker
+  * Work Boats
+  * Zero
+- Buffed the following unit promotions:
+  * Home Sweet Home
+  * Pearl of the Orient
+  * Final Singularity
+  * Supernova Fury
+
 ## Beta v0.4 (December 9, 2021 Update)
 *Soft Release 4*
 ### Major Changes

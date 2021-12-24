@@ -21,6 +21,7 @@ All of the changes from vanilla Unciv and new content are listed here.<br>
       * [Scouting III](#scouting-iii)
 	  * [Blitz](#blitz)
 	  * [March](#march)
+	  * [Home Sweet Home](#home-sweet-home)
 	- New Promotions
 	  * [City Raider](#city-raider-i-ii--iii)
 	  * [Mountaineer](#mountaineer)
@@ -40,10 +41,16 @@ All of the changes from vanilla Unciv and new content are listed here.<br>
 		* [Quick Study II](#quick-study-ii)
 		* [Adaptive Warfare](#adaptive-warfare)
 		* [Elephant Rider](#elephant-rider)
+		* [Voyaging Worker's Boost](#voyaging-workers-boost)
 	  - Civilization-Exclusive Promotions
 	    * [Pearl of the Orient](#pearl-of-the-orient)
 		* [Final Singularity](#final-singularity)
 		* [Supernova Fury](#supernova-fury)
+		* [Freezing Lune](#freezing-lune)
+		* [Nature's Wrath](#natures-wrath)
+		* [Blinding Spirit](#blinding-spirit)
+		* [Deceptive Tactics](#deceptive-tactics)
+		* [Predictive Tactics](#predictive-tactics)
   - [Specialists](#specialists)
     - Existing Specialists
 	  * [Scientist](#scientist)
@@ -91,7 +98,9 @@ All of the changes from vanilla Unciv and new content are listed here.<br>
   * [The **N**etherlands](#the-netherlands)
   * [Sweden](#sweden)
 - <s>Brave New World Civilizations</s>
+- [Modded Civilizations](#modded-civilizations)
 - [Mods with Additional Content](#mods-with-additional-content)
+  * [Oingo Boingo](#oingo-boingo)
   * [UnHax](#unhax)
   * [Wars Mod](#wars-mod)
   * [Shared](#shared)
@@ -146,10 +155,14 @@ All of the changes from vanilla Unciv and new content are listed here.<br>
 - Available for Sword, Gunpowder, Mounted, and Armored units
 
 #### March
-- [=] Unit will heal every turn, even if it performs an action,
+- [=] Unit will heal every turn, even if it performs an action
 - [++] +1 Movement
 - Requires Accuracy II, Barrage II, Shock III, or Drill III
 - Available for most land units except Civilians, Scouts and Armored units
+
+#### Home Sweet Home
+- [+] +40% Strength decreasing with distance from the capital
+- Only available for [Mehal Safari](#unique-unit-mehal-safari)
 
 <br>**New Promotions**<br>
 #### City Raider I, II, & III
@@ -275,25 +288,60 @@ All of the changes from vanilla Unciv and new content are listed here.<br>
   * [Naresuan's Elephant](#unique-unit-naresuan-s-elephant)
   * [African Forest Elephant](#unique-unit-2-african-forest-elephant)
 
+#### Voyaging Worker's Boost
+- [++] +2 Movement in Water tiles after discovering Astronomy
+- Only available for the following units:
+  * Worker
+  * Work Boats
+
 <br>**Civilization-Exclusive Promotions**<br>
 *These are unit promotions that are only available for units originating from a certain civilization.*
 #### Pearl of the Orient
-- [++] +35% Strength when defending in Friendly Land
-- [++] +25% Strength when defending in Foreign Land
-- [++] +20% Strength for unique units of the civilization
+- [++] +35% Strength in Friendly Land tiles
+- [++] +25% Strength in Foreign Land tiles
+- [++] +25% Strength for unique units of the civilization
 - Has three different icons corresponding to the civilization's icon (icons to be added soon)
 - Only available via [Malacanang Palace](#unique-national-wonder-malacanang-palace)
 
 #### Final Singularity
-- [++] +100% Strength when below 20 HP
+- [++] +120% Strength when below 20 HP
 - [++] -20% Strength for adjacent enemy Military units
 - Only available via [TON 618](#unique-national-wonder-ton-618)
 
 #### Supernova Fury
-- [++] +90% Strength when attacking with below 30 HP
+- [++] +100% Strength when attacking with below 30 HP
 - [++] +60% Strength when defending
-- [++] Heals 50 damage if it kills a unit
+- [++] Heals 60 damage if it kills a unit
 - Only available via [Betelgeuse](#unique-national-wonder-betelgeuse)
+
+#### Freezing Lune
+- [++]\* +80% Strength when fighting in Snow and Tundra tiles
+- [++]\* Double movement in Snow and Tundra tiles
+- Only available via [Ganymede](#unique-national-wonder-ganymede)
+
+#### Nature's Wrath
+- [++] Various Strength bonuses for different units
+- [++] 1 additional attacks per turn
+- Only available via [Terra Nova](#unique-national-wonder-terra-nova)
+
+#### Blinding Spirit
+- [++] +60% Strength when above 59 HP
+- [++] +90% Strength when below 41 HP
+- [++] +2 Movement when below 51 HP
+- Only available via [Hale-Bopp](#unique-national-wonder-hale-bopp)
+
+#### Deceptive Tactics
+- [++] +25% Strength before discovering Drama and Poetry
+- [++]\* +45% Strength and +2 Movement after discovering Drama and Poetry
+- [++] Ignores the Zone of Control
+- Only available via [Khnum](#unique-national-wonder-khnum)
+
+#### Predictive Tactics
+- [++] +25% Strength before discovering Writing
+- [++] +45% Strength after discovering Writing
+- [++] 1 additional attacks per turn
+- [++] Ignores the Zone of Control
+- Only available via [Thoth](#unique-national-wonder-thoth)
 
 
 ### Specialists
@@ -321,7 +369,7 @@ All of the changes from vanilla Unciv and new content are listed here.<br>
 
 #### Farmer
 - [++] +4 Food
-- [++] +4 Great Farmer points
+- [++] +1 Great Farmer point
 
 
 ## Vanilla/DLC Civilizations
@@ -428,6 +476,18 @@ All of the changes from vanilla Unciv and new content are listed here.<br>
 - [+] Range Strength: 20 in SuperCiv vs. 18 base unit vs. 14 in vanilla
 - [++] Gains the Logistics and **Great Generals I** promotion for free
 
+#### Unique Improvement: Great Wall
+*[Not to be confused with a World Wonder of the same name]*
+- [++] Unlocked with Masonry
+- Can be built on Plains, Grassland, Hills, Desert, Tundra, and Snow
+- +2 Gold
+- Gives a defensive bonus of 50%
+- +1 Gold, +1 Culture, and +1 Science for each adjacent Great Wall
+- +2 Culture and +2 Science after discovering Flight
+- Can be built just outside of China's borders
+- Cannot be built on tiles with a resource
+- Tile provides yield without assigned population
+
 ### Denmark
 #### Unique Ability: Viking Fury
 - [=] +1 Movement for Embarked units
@@ -506,9 +566,16 @@ All of the changes from vanilla Unciv and new content are listed here.<br>
 
 ### France 
 #### Unique Ability: Ancien Régime
-- [=] +2 Culture in cities before discovering Steam Power
+- [+] **+4 Culture** in cities before discovering Steam Power (vanilla: +2 Culture)
 - [++]\* Land Melee units gain the Blitz and Quick Study promotions
 - [++] non-nuke Military units gain the Morale promotion
+
+#### Unique National Wonder: Revolutionary Epic
+- [++] Replaces Heroic Epic
+- Cost: 100 vs. 120
+- Culture: 2 vs. 1
+- Happiness: 2 vs. 0
+- All newly-trained non-air units in this city receive the **Revolutionary Morale** promotion (vanilla: Morale)
 
 #### Unique Unit 1: Musketeer
 - [=] Replaces Musketman
@@ -652,15 +719,17 @@ All of the changes from vanilla Unciv and new content are listed here.<br>
 
 #### Unique Unit 1: Samurai
 - [=] Replaces Longswordsman
+- [++] Cost: 100 in SuperCiv vs. 120 in vanilla & base unit
 - [++] Melee Strength: 27 in SuperCiv vs. 21 in vanilla & base unit
 - Gains the [=] Shock I, [++] Trump Card, and [+] **Great Generals III** promotion (vanilla: Great Generals II)
 
 #### Unique Unit 2: Zero
 - [=] Replaces Fighter
 - [=] Does not require Oil
+- [++] Cost: 325 in SuperCiv vs. 375 in vanilla & base unit
 - [++]\* Melee & Ranged Strength: 50 in SuperCiv vs. 45 in vanilla & base unit
 - [=] +33% Strength vs. Fighters
-- [++] Gains the Sortie promotion
+- [++]\* Gains the Sortie and Logistics promotions
 
 ### Korea
 #### Unique Ability: Scholars of the Jade Hall
@@ -710,6 +779,8 @@ All of the changes from vanilla Unciv and new content are listed here.<br>
 - [=] 50% chance of capturing defeated Barbarian naval units and earning 25 Gold
 - [++] +25% Strength for naval units
 - [++] Naval melee units gain the Boarding Party I promotion
+- [++] +3 Production in all cities
+- [++] +5 Gold in all coastal cities
 
 #### Unique Unit 1: Janissary
 - [=] Replaces Musketman
@@ -728,11 +799,11 @@ All of the changes from vanilla Unciv and new content are listed here.<br>
 
 ### Persia
 #### Unique Ability: Achaemenid Legacy
-- [+] Golden Age length increased by **60%** (vanilla: 50%)
+- [+] Golden Age length increased by **100%** (vanilla: 50%)
 - [=] +1 Movement for all units during a Golden Age
 - [+] **+15%** Strength for all units during a Golden Age (vanilla: +10%)
 - [++] +2 Science in all cities when not at war during a Golden Age
-- [++] +5 Happiness in all cities
+- [++] +10 Happiness in all cities
 
 #### Unique Building: Satrap's Court
 - [=] Replaces Bank
@@ -753,6 +824,7 @@ All of the changes from vanilla Unciv and new content are listed here.<br>
 - [=] Normal vision for embarked units
 - [++] +2 Movement for naval and embarked units
 - [+]\* **+20%** Strength (vanilla: +10%) if within **3** tiles (vanilla: 2) of a Moai
+- [++] Starts with the Sailing technology
 
 #### Unique Unit: Maori Warrior
 - [=] Replaces Warrior
@@ -799,6 +871,7 @@ All of the changes from vanilla Unciv and new content are listed here.<br>
 #### Unique Improvement: Roman Fort
 - [++] Unlocked with Iron Working
 - Obsolete with Gunpowder
+- Can be built on Plains, Grassland, Hills, Desert, Tundra, and Snow
 - Gives a defensive bonus of 75%
 - Can be built outside of Rome's borders
 
@@ -806,6 +879,7 @@ All of the changes from vanilla Unciv and new content are listed here.<br>
 #### Unique Ability: Siberian Riches
 - [+] **+2 Production and +1 Science** from every strategic resource (vanilla: +1 Production)
 - [++] Double quantity of Horses, Iron, **Coal**, and Uranium produced
+- [++]\* +1 Production from every Mine and Railroad
 
 #### Unique Unit: Krepost
 - [=] Replaces Barracks
@@ -823,8 +897,8 @@ All of the changes from vanilla Unciv and new content are listed here.<br>
 
 ### Siam
 #### Unique Ability: Father Governs Children
-- [+] **+60%** Gold, Culture, and Faith from City-States (vanilla: +50%)
-- [=] Military Units gifted from City-States start with additional 10 XP
+- [+] **+70%** Gold, Culture, and Faith from City-States (vanilla: +50%)
+- [+] Military Units gifted from City-States start with additional **30 XP** (vanilla: 10 XP)
 - [++] Resting point for City-State influence increased by 20
 
 #### Unique Building: Wat
@@ -873,13 +947,14 @@ All of the changes from vanilla Unciv and new content are listed here.<br>
 
 #### Unique Unit 1: Conquistador
 - [=] Replaces Knight
-- [+] Cost: 115 in SuperCiv vs. 135 in vanilla vs. 120 in base unit
+- [+] Cost: 100 in SuperCiv vs. 135 in vanilla vs. 120 in base unit
+- [++] Melee Strength: 23 in SuperCiv vs. 20 in vanilla & base unit
 - [=] Founds a new city on foreign continents
 - [=] +2 Sight
 - [=] Defense bonus when embarked
 - [=] Loses the Strength penalty vs cities
 - [++] Loses the inability to gain defensive terrain bonuses
-- [++] Gains the Sentry promotion
+- [++]\* Gains the Sentry and Mobility promotions
 
 #### Unique Unit 2: Tercio
 - [=] Replaces Musketman
@@ -918,7 +993,7 @@ All of the changes from vanilla Unciv and new content are listed here.<br>
 #### Unique Ability: Patriarchate of Constantinople
 - [++] May choose 1 additional belief of any type when founding and **enhancing** a religion
 - [++] Receive a free Great Prophet upon discovering the Theology technology
-- [++] +5 Culture and +5 Faith in holy cities
+- [++]\* +5 Culture and +5 Faith in holy cities and in the capital
 
 #### Unique Unit 1: Dromon
 - [=] Replaces Trireme
@@ -961,6 +1036,7 @@ All of the changes from vanilla Unciv and new content are listed here.<br>
 #### Unique Ability: Druidic Lore
 - [+] +1 Faith and **+2 Production** in all cities with neighboring 1 to 2 unimproved Forest tiles (Production is not provided in vanilla)
 - [+] +2 Faith and **+1 Production** in all cities with neighboring 3 to 6 unimproved Forest tiles (see above)
+- [++] +3 Production, +2 Faith, +1 Gold in all cities
 - [++] +3 Production in all cities with neighboring 1 to 6 improved Forest tiles
 - [++] Land units gain the Woodsman promotion
 
@@ -995,7 +1071,7 @@ All of the changes from vanilla Unciv and new content are listed here.<br>
 - [=] Replaces Rifleman
 - [=] Cost: 200 in G&K vs. 225 in base unit
 - [++] Melee Strength: 38 in SuperCiv vs. 34 in G&K & base unit
-- [++]\* Gains the Drill I, **II & III** and Home Sweet Home promotions
+- [++]\* Gains the Drill I, **II & III** and [Home Sweet Home](#home-sweet-home) promotions
 
 ### The Huns
 #### Unique Ability: Scourge of God
@@ -1004,7 +1080,7 @@ All of the changes from vanilla Unciv and new content are listed here.<br>
 - [=] Starts with the Animal Husbandry technology
 - [=] "Borrows" city names from other civilizations in the game
 - [++]\* Sword and Gunpowder units gain the Besiege promotion
-- [++] Siege units gain the Volley promotion
+- [++]\*\* Archery, Range Gunpowder, and Siege units gain the Volley promotion
 
 #### Unique Unit 1: Horse Archer
 - [=] Replaces Chariot Archer
@@ -1050,6 +1126,7 @@ All of the changes from vanilla Unciv and new content are listed here.<br>
 - [+] Retain **75%** of Happiness from a luxury resource after the last copy has been traded away (vanilla: 50%)
 - [++] +2 Gold and +2 Happiness from every luxury resource
 - [++] +3 Gold from each Trade Route
+- [++] +3 Gold, +2 Culture from every Polder
 
 #### Unique Unit: Sea Beggar
 - [=] Replaces Privateer
@@ -1067,8 +1144,8 @@ All of the changes from vanilla Unciv and new content are listed here.<br>
 
 ### Sweden
 #### Unique Ability: Nobel Prize
-- [+] Gain **120** Influence with a Great Person gift to a City-State (vanilla: 90)
-- [+] When declaring friendship, both parties gain a **40%** boost to great person generation (vanilla: 10%)
+- [+] Gain **120** Influence with a Great Person gift to a City-State (G&K: 90)
+- [+] When declaring friendship, both parties gain a **40%** boost to great person generation (G&K: 10%)
 - [++] +5 Production and +5 Gold from every Workshop
 - [++] +1 Science and +1 Culture from every Tundra
 
@@ -1099,6 +1176,29 @@ All of the changes from vanilla Unciv and new content are listed here.<br>
 
 
 ## Mods with Additional Content
+### Oingo Boingo
+#### Unique National Wonder: Khnum
+- [++] Replaces Palace
+- Unique to Oingo
+- Production: 5 vs. 3
+- Science: 3
+- Gold: 4 vs. 3
+- Culture: 6 vs. 1
+- City Strength: 3 vs. 2
+- Indicates the capital city
+- Military units gain the [Deceptive Tactics](#deceptive-tactics) and Great Generals I promotions
+
+#### Unique National Wonder: Thoth
+- [++] Replaces Palace
+- Unique to Boingo
+- Production: 5 vs. 3
+- Science: 7 vs. 3
+- Gold: 4 vs. 3
+- Culture: 2 vs. 1
+- City Strength: 3 vs. 2
+- Indicates the capital city
+- Military units gain the [Predictive Tactics](#predictive-tactics) and Quick Study promotions
+
 ### UnHax
 #### Global Building: UnHax Mode - SuperCiv
 - Can only be bought with UnHax Mode - Enhancement
@@ -1126,19 +1226,56 @@ All of the changes from vanilla Unciv and new content are listed here.<br>
 - [++] Replaces Palace
 - Unique to Orange Star
 - Production: 4 vs. 3
-- Science & Gold: 5 vs. 3
+- Science & Gold: 6 vs. 3
 - Culture: 2 vs. 1
 - City Strength: 3 vs. 2
 - Indicates the capital city
 - Military units gain the [Supernova Fury](#supernova-fury) and Great Generals III promotions
 
+#### Unique National Wonder: Ganymede
+- [++] Replaces Palace
+- Unique to Blue Moon
+- Production: 6 vs. 3
+- Science & Gold: 4 vs. 3
+- Culture: 3 vs. 1
+- City Strength: 4 vs. 2
+- Indicates the capital city
+- +2 Production from every Snow and Tundra tiles
+- Military units gain the [Freezing Lune](#freezing-lune) promotion
+
+#### Unique National Wonder: Terra Nova
+- [++] Replaces Palace
+- Unique to Green Earth
+- Production: 4 vs. 3
+- Science: 7 vs. 3
+- Gold: 5 vs. 3
+- Culture: 2 vs. 1
+- City Strength: 3 vs. 2
+- Indicates the capital city
+- +1 Production and +1 Science from every Forest and Jungle tiles
+- Military units gain the [Nature's Wrath](#natures-wrath) promotion
+
+#### Unique National Wonder: Hale-Bopp
+- [++] Replaces Palace
+- Unique to Yellow Comet
+- Production: 5 vs. 3
+- Science & Gold: 4 vs. 3
+- Culture: 4 vs. 1
+- City Strength: 4 vs. 2
+- Indicates the capital city
+- Military units gain the [Blinding Spirit](#blinding-spirit) promotion
+- Land units gain the Blitz promotion
+- Water and Air units gain the Logistics promotion
+
 ### Shared
 #### Unique National Wonder: Malacanang Palace
 - [++] Replaces Palace
 - Unique to Philippines, Filipinas, and Tondo
-- Production, Science & Gold: 7 vs. 3
-- Culture: 3 vs. 1
-- City Strength: 4 vs. 2
+- Production: 4 (Philippines & Tondo) vs. 8 (Filipinas) vs. 3 (base)
+- Science: 8 (Philippines) vs. 5 (Filipinas) vs. 4 (Tondo) vs. 3 (base)
+- Gold: 4 (Philippines & Tondo) vs. 3 (Filipinas & base)
+- Culture: 2 (Philippines) vs. 7 (Tondo) vs. 1 (Filipinas & base)
+- City Strength: 3 (Philippines) vs. 4 (Filipinas) vs. 2 (Tondo & base)
 - Indicates the capital city
 - Military units gain the [Pearl of the Orient](#pearl-of-the-orient) promotion
 - Lantakas gain the Logistics promotion
