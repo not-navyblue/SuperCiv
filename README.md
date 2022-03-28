@@ -2,6 +2,7 @@
 A base ruleset mod that buffs *everything* in vanilla Unciv, brings in some new additions to the mix, and everything in between. 
 It is currently incomplete, however.<br>
 **Current Version: Beta v0.5**<br>
+#### **This mod is no longer maintained and cannot be played in the latest versions of Unciv.**
 
 <br>Any mods that are not mentioned in the following lists are assumed to be compatible with SuperCiv without changes.
 ### Mods with Additional Content
